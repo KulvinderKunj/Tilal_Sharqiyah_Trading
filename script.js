@@ -1,29 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
-    var multipleCardCarousel = document.querySelector("#carouselExampleControls");
-    if (window.matchMedia("(min-width: 768px)").matches) {
-        var carousel = new bootstrap.Carousel(multipleCardCarousel, {
-            interval: false
-        });
-        var carouselWidth = $(".carousel-inner")[0].scrollWidth;
-        var cardWidth = $(".carousel-item").width();
-        var scrollPosition = 0;
 
-        $("#carouselExampleControls .carousel-control-next").on("click", function() {
-            if (scrollPosition < carouselWidth - cardWidth * 3) { // Corrected to ensure proper scrolling
-                scrollPosition += cardWidth;
-                $(".carousel-inner").animate({ scrollLeft: scrollPosition }, 600);
-            }
-        });
-
-        $("#carouselExampleControls .carousel-control-prev").on("click", function() {
-            if (scrollPosition > 0) {
-                scrollPosition -= cardWidth;
-                $(".carousel-inner").animate({ scrollLeft: scrollPosition }, 600);
-            }
-        });
-    } else {
-        $(multipleCardCarousel).addClass("slide");
-    }
 
     // IntersectionObserver for animation on scroll
     const observer = new IntersectionObserver(entries => {
@@ -37,4 +13,30 @@ document.addEventListener("DOMContentLoaded", function() {
 
     const aboutContainer = document.querySelector('.about-container');
     observer.observe(aboutContainer);
+});
+
+
+
+
+
+
+var copy = document.querySelector(".logos-slide").cloneNode(true);
+document.querySelector(".logos").appendChild(copy);
+
+
+
+let valueDisplays = document.querySelectorAll(".num");
+let interval = 4000;
+
+valueDisplays.forEach((valueDisplay) => {
+  let startValue = 0;
+  let endValue = parseInt(valueDisplay.getAttribute("data-val"));
+  let duration = Math.floor(interval / endValue);
+  let counter = setInterval(function () {
+    startValue += 1;
+    valueDisplay.textContent = startValue +"+";
+    if (startValue == endValue) {
+      clearInterval(counter);
+    }
+  }, duration);
 });
