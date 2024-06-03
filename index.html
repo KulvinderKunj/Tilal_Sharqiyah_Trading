@@ -9,18 +9,25 @@
       src="https://kit.fontawesome.com/fb74ed147c.js"
       crossorigin="anonymous"
     ></script>
-    <!-- CSS Link  -->
-    <link rel="stylesheet" href="style.css" />
+     <!-- CSS -->
+     <link rel="stylesheet" href="style/style.css" />
 
-  
-  
+
+
+
+
+     <!-- +++++++++Other+++++ -->
+
+
+
+
   </head>
 
   <!-- Body starts  -->
   <body>
     <!-- Navigation bar  -->
 
-    <nav>
+    <nav class="nav">
 
     
         
@@ -45,7 +52,7 @@
     </nav>
 
     <!-- Home section  -->
-    <header>
+    <header id="home">
       <div class="hero">
         <div class="overlay">
           <h1>
@@ -53,7 +60,7 @@
             <span class="underline">Tilal Sharqiyah Trading</span>
           </h1>
           <br />
-          <p>Delivering Excellence Across Multiple Industries</p>
+          <p>Your Trusted Partner in <span  id="typed-text"></span>|</p>
           <div class="cta-buttons">
             <a href="#about-us" class="btn">Learn More</a>
             <a href="#contact" class="btn">Contact Us</a>
@@ -65,7 +72,7 @@
     <!-- Our Mission  Section  -->
     <section id="about-us" class="about">
       <div class="about-container">
-        <div class="about-text">
+        <div class="about-text container1">
           <h2>Our Mission</h2>
           <h3><i class="fa-solid fa-quote-left"></i></h3>
           <p>
@@ -77,23 +84,24 @@
           <button>Read More</button>
         </div>
         <div class="about-image">
-          <img src="images/silder2.jpg" alt="About Us Image" />
+          <img src="images/slider1.jpg" alt="About Us Image" class="active"/>
+          <img src="images/silder2.jpg" alt="About Us Image"/>
+          <img src="images/slider1.jpg" alt="About Us Image"/>
         </div>
       </div>
-
     </section>
-
-<section  class="facts_section  container">
+    
+<section  class="facts_section  container1">
   <div class="wrapper">
     <div class="facts">
       <!-- <i class="fas fa-utensils   facts_icon"></i> -->
-      <span class="num" data-val="400">000</span>
-      <span class="text">Meals Delivered</span>
+      <span class="num" data-val="10">00</span>
+      <span class="text">Years of Experience</span>
     </div>
     <div class="facts">
       <!-- <i class="fas fa-smile-beam facts_icon"></i> -->
-      <span class="num" data-val="340">000</span>
-      <span class="text">Happy Customers</span>
+      <span class="num" data-val="490">00</span>
+      <span class="text">Happy Clients</span>
     </div>
     <div class="facts">
       <!-- <i class="fas fa-list facts_icon"></i> -->
@@ -107,11 +115,13 @@
     </div>
   </div>
 
+
+
 </section>
     <!-- Services  -->
 
 
-    <section class="sevices_section container ">
+    <section class="sevices_section container1 " id="services">
     
         <h2 class="section-heading">Our Services</h2>
     
@@ -122,7 +132,7 @@
               <i class="fas fa-hammer"></i>
             </div>
             <h3>Service Heading</h3>
-            <p>
+            <p class="card_data" >
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam
               consequatur necessitatibus eaque.
             </p>
@@ -134,7 +144,7 @@
               <i class="fas fa-brush"></i>
             </div>
             <h3>Service Heading</h3>
-            <p>
+            <p class="card_data">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam
               consequatur necessitatibus eaque.
             </p>
@@ -146,7 +156,7 @@
               <i class="fas fa-wrench"></i>
             </div>
             <h3>Service Heading</h3>
-            <p>
+            <p class="card_data">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam
               consequatur necessitatibus eaque.
             </p>
@@ -158,7 +168,7 @@
               <i class="fas fa-truck-pickup"></i>
             </div>
             <h3>Service Heading</h3>
-            <p>
+            <p class="card_data">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam
               consequatur necessitatibus eaque.
             </p>
@@ -170,7 +180,7 @@
               <i class="fas fa-broom"></i>
             </div>
             <h3>Service Heading</h3>
-            <p>
+            <p class="card_data">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam
               consequatur necessitatibus eaque.
             </p>
@@ -182,7 +192,7 @@
               <i class="fas fa-plug"></i>
             </div>
             <h3>Service Heading</h3>
-            <p>
+            <p class="card_data">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam
               consequatur necessitatibus eaque.
             </p>
@@ -193,8 +203,8 @@
 
     <!-- Our Clients  sectiom  -->
     
-    <section id="clients">
-      <div class="container">
+    <section id="clients"  class="sevices_section container1">
+      <!-- <div class="container1"> -->
         <h2>Our Clients</h2>
         <div class="logos">
           <div class="logos-slide">
@@ -219,42 +229,122 @@
             <img src="images/logos/mrbeast.svg" />
           </div>
         </div>
+      <!-- </div> -->
+    </section>
+
+
+       
+        </div>
+    
+    </section>
+
+
+
+
+    <!-- Testimonials  -->
+
+    <section id="testimonials" class="testi_section container1">
+      <h2>Testimonials</h2>
+      <div class="testimonials-container">
+        <div class="testimonial-slide">
+          <div class="testimonial">
+            <img src="./images/model-1.jpg" alt="John Doe">
+            <p> <i class="fa-solid fa-quote-left quote"></i> Reliable and professional, they always deliver on time. A trusted partner. <i class="fa-solid fa-quote-right quote"></i></i></p>
+
+            <h3>- John Doe</h3>
+          </div>
+          <div class="testimonial">
+            <img src="./images/model-2.jpg" alt="Jane Smith">
+            <p> <i class="fa-solid fa-quote-left quote"></i> Reliable and professional, they always deliver on time. A trusted partner. <i class="fa-solid fa-quote-right quote"></i></i></p>
+
+            <h3>- Jane Smith</h3>
+          </div>
+          <div class="testimonial">
+            <img src="./images/model-3.jpg" alt="Ahmed Ali">
+            <p> <i class="fa-solid fa-quote-left quote"></i> Reliable and professional, they always deliver on time. A trusted partner. <i class="fa-solid fa-quote-right quote"></i></i></p>
+            <h3>- Ahmed Ali</h3>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-controls">
+        <span class="prev">&#10094;</span>
+        <span class="next">&#10095;</span>
       </div>
     </section>
+    
+    
+
+
+
     <!-- Contact section  -->
     <section id="contact-info">
-      <div class="container">
+      <div class="container1 container_contact">
         <h2>Contact Information</h2>
-        <p>
-          For inquiries, partnerships, or more information about our services,
-          please contact us:
-        </p>
-        <p>Phone: +968 7724 4477</p>
-        <p>
-          Email:
-          <a href="mailto:tilalsharqiya@gmail.com">tilalsharqiya@gmail.com</a>
-        </p>
-        <a href="#contact" class="btn">Contact Us</a>
+        <div class="contact-content">
+          <div class="contact-details">
+            <h3>Get in Touch with Us</h3>
+            <p class="contact_caption">
+              For inquiries, partnerships, or more information about our services,
+              please contact us:
+            </p>
+          
+               <p><i class="fa-solid fa-location-dot contact_icon"></i> &nbsp; &nbsp;Plot# 114, Area: Bosher, Building # 965 Unit: 43</p>
+            
 
-              <div class="social-media">
-        <a href="">
-          <i class="fa-brands fa-facebook" style="color: #1471b8"></i>
-        </a>
+            <p><i class="fa-solid fa-phone contact_icon"></i> &nbsp; &nbsp;+968 7724 4477</p>
+            <p><i class="fa-solid fa-envelope contact_icon"></i>  &nbsp; &nbsp;
+              <a href="mailto:tilalsharqiya@gmail.com">tilalsharqiya@gmail.com</a>
+            </p>
+            
+            <div class="social-media">
+              <a href="">
+                <i class="fa-brands fa-facebook" style="color: #1877F2"></i>
+              </a>
+              <a href="">
+                <i class="fa-brands fa-square-instagram" style="color: #FD1D1D"></i>
+              </a>
+              <a href="">
+                <i class="fa-brands fa-twitter" style="color: #1da1f2;"></i>
+              </a>
+              <a href="">
+                <i class="fa-brands fa-whatsapp" style="color: #25d366;"></i>
+              </a>
+              <a href="">
+                <i class="fa-brands fa-linkedin" style="color: #0a66c2;"></i>
+              </a>
 
-        <a href="">
-          <i class="fa-brands fa-square-instagram" style="color: #f43e3e"></i>
-        </a>
+       
+            </div>
+          </div>
+          <div class="contact-form">
+            <form action="#" method="post">
+              <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+              </div>
+              <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+              </div>
+              <button type="submit" class="btn">Send Message</button>
+            </form>
+          </div>
+        </div>
       </div>
-      </div>
+ 
     </section>
+    <footer>
+      <p><i class="fa-regular fa-copyright"></i> 2024 Tilal Sharqiyah Trading, Oman. &nbsp; All rights reserved.</p>
+          </footer>
+        <!-- ======================================== -->
 
-    <!-- ======================================== -->
-    <!-- BootStarp JS  -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- JavaScript -->
+        <script src="js/script.js"></script>
 
-    <!-- JQuary link  -->
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-      <!-- JavaScript link  -->
-        <script src="script.js"></script>
+  
   </body>
 </html>
