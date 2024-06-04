@@ -25,325 +25,412 @@
 
   <!-- Body starts  -->
   <body>
-    <!-- Navigation bar  -->
-
     <nav class="nav">
-
-    
-        
-      </div>
-      <!-- logo  -->
+      <!-- Hamburger Menu -->
+      <!-- logo -->
       <div class="logo">
         <img src="images/logo.png" alt="Logo" />
+  
       </div>
-      <!-- Menu  -->
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#clients">Clients</a></li>
-        <li><a href="#contact">Contact</a></li>
+      <div class="hamburger">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+      </div>
+      <!-- Menu -->
+      <ul id="nav-menu">
+        <li><a href="#home" class="lang lang-en">Home</a><a href="#home" class="lang lang-ar" style="display: none;">الرئيسية</a></li>
+        <li><a href="pages/aboutUs.html" class="lang lang-en">About</a><a href="#about" class="lang lang-ar" style="display: none;">عن الشركة</a></li>
+        <li><a href="#services" class="lang lang-en">Services</a><a href="#services" class="lang lang-ar" style="display: none;">الخدمات</a></li>
+        <li><a href="#clients" class="lang lang-en">Clients</a><a href="#clients" class="lang lang-ar" style="display: none;">العملاء</a></li>
+        <li><a href="#contact" class="lang lang-en">Contact</a><a href="#contact" class="lang lang-ar" style="display: none;">تواصل</a></li>
+        <li class="mobile-lang">      <button id="language-toggle" onclick="toggleLanguage()">العربية / English</button></li>
       </ul>
-
-      <!-- Language botton  -->
-      <div class="contact-info">
-        <button id="change-language-btn">English</button>
-    
-    </nav>
-
-    <!-- Home section  -->
-    <header id="home">
-      <div class="hero">
-        <div class="overlay">
-          <h1>
-            Welcome to
-            <span class="underline">Tilal Sharqiyah Trading</span>
-          </h1>
-          <br />
-          <p>Your Trusted Partner in <span  id="typed-text"></span>|</p>
-          <div class="cta-buttons">
-            <a href="#about-us" class="btn">Learn More</a>
-            <a href="#contact" class="btn">Contact Us</a>
-          </div>
-        </div>
+      <div class="desktop-lang">
+        <button id="language-toggle" onclick="toggleLanguage()">العربية / English</button>
       </div>
-    </header>
+    </nav>
+    
+    
+    
 
-    <!-- Our Mission  Section  -->
-    <section id="about-us" class="about">
-      <div class="about-container">
-        <div class="about-text container1">
-          <h2>Our Mission</h2>
+<!-- Home section -->
+<header id="home">
+  <div class="hero">
+      <div class="overlay">
+          <h1 class="lang lang-en_b">
+              Welcome to
+              <span class="underline">Tilal Sharqiyah Trading</span>
+          </h1>
+          <h1 class="lang lang-ar" style="display: none;">
+              مرحبا بكم في
+              <span class="underline">تلال الشرقية للتجارة</span>
+          </h1>
+          <br>
+
+          <p class="lang lang-en">Your Trusted Partner in <span id="typed-text"></span>|</p>
+          <p class="lang lang-ar" style="display:none;">شريكك الموثوق في <span id="typed-text_ar"></span>|</p>
+          <div class="cta-buttons">
+              <a href="#about-us" class="btn lang lang-en">Learn More</a>
+              <a href="#about-us" class="btn lang lang-ar" style="display:none;">اعرف أكثر</a>
+              <a href="#contact" class="btn lang lang-en">Contact Us</a>
+              <a href="#contact" class="btn lang lang-ar" style="display:none;">اتصل بنا</a>
+          </div>
+      </div>
+  </div>
+</header>
+
+
+<!-- Our Mission Section -->
+<section id="about-us" class="about">
+  <div class="about-container">
+      <div class="about-text container1">
+          <h2 class="lang lang-en_b">Our Mission</h2>
+          <h2 class="lang lang-ar_b" style="display: none;">مهمتنا</h2>
           <h3><i class="fa-solid fa-quote-left"></i></h3>
-          <p>
-            To provide high-quality services and solutions in medicine
-            resources, surgical objects supply, transportation and logistics
-            services whilst upholding the highest standards of exceptional,
-            integrity, and innovation.
+          <p class="lang lang-en">
+              To provide high-quality services and solutions in medicine
+              resources, surgical objects supply, transportation and logistics
+              services whilst upholding the highest standards of exceptional,
+              integrity, and innovation.
           </p>
-          <button>Read More</button>
-        </div>
-        <div class="about-image">
+          <p class="lang lang-ar" style="display: none;">
+              تقديم خدمات وحلول عالية الجودة في مجال الموارد الطبية،
+              توريد الأدوات الجراحية، خدمات النقل والخدمات اللوجستية مع الحفاظ
+              على أعلى معايير الاستثنائية، النزاهة، والابتكار.
+          </p>
+          <br>
+          <br>
+          <button class="lang lang-en">Read More</button>
+          <button class="lang lang-ar" style="display:none;">اقرأ المزيد</button>
+      </div>
+      <div class="about-image">
           <img src="images/slider1.jpg" alt="About Us Image" class="active"/>
           <img src="images/silder2.jpg" alt="About Us Image"/>
           <img src="images/slider1.jpg" alt="About Us Image"/>
-        </div>
       </div>
-    </section>
-    
-<section  class="facts_section  container1">
+  </div>
+</section>
+
+<section class="facts_section container1">
   <div class="wrapper">
-    <div class="facts">
-      <!-- <i class="fas fa-utensils   facts_icon"></i> -->
-      <span class="num" data-val="10">00</span>
-      <span class="text">Years of Experience</span>
+      <div class="facts">
+          <span class="num" data-val="10">10</span>
+          <span class="text lang lang-en">Years of Experience</span>
+          <span class="text lang lang-ar" style="display: none;">سنوات الخبرة</span>
+      </div>
+      <div class="facts">
+          <span class="num" data-val="490">490</span>
+          <span class="text lang lang-en">Happy Clients</span>
+          <span class="text lang lang-ar" style="display: none;">العملاء السعداء</span>
+      </div>
+      <div class="facts">
+          <span class="num" data-val="225">225</span>
+          <span class="text lang lang-en">Menu Items</span>
+          <span class="text lang lang-ar" style="display: none;">عناصر القائمة</span>
+      </div>
+      <div class="facts">
+          <span class="num" data-val="280">280</span>
+          <span class="text lang lang-en">Five Stars</span>
+          <span class="text lang lang-ar" style="display: none;">خمس نجوم</span>
+      </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+<section class="services_section container1" id="services">
+  <h2 class="section-heading lang lang-en_b">Our Services</h2>
+  <h2 class="section-heading lang lang-ar_b" style="display: none;">خدماتنا</h2>
+
+  <div class="row">
+      <!-- Multiple service cards like the one below -->
+      <div class="column">
+        <div class="card">
+            <div class="icon-wrapper">
+                <i class="fas fa-hammer"></i>
+            </div>
+            <h3 class="lang lang-en_b">Service Heading</h3>
+            <h3 class="lang lang-ar_b" style="display: none;">عنوان الخدمة</h3>
+            <p class="card_data lang lang-en">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam consequatur necessitatibus eaque.
+            </p>
+            <p class="card_data lang lang-ar" style="display: none;">
+                نص عربي مكافئ للوصف المذكور.
+            </p>
+        </div>
     </div>
-    <div class="facts">
-      <!-- <i class="fas fa-smile-beam facts_icon"></i> -->
-      <span class="num" data-val="490">00</span>
-      <span class="text">Happy Clients</span>
-    </div>
-    <div class="facts">
-      <!-- <i class="fas fa-list facts_icon"></i> -->
-      <span class="num" data-val="225">000</span>
-      <span class="text">Menu Items</span>
-    </div>
-    <div class="facts">
-      <!-- <i class="fas fa-star facts_icon"></i> -->
-      <span class="num" data-val="280">000</span>
-      <span class="text">Five Stars</span>
+    <div class="column">
+      <div class="card">
+          <div class="icon-wrapper">
+              <i class="fas fa-hammer"></i>
+          </div>
+          <h3 class="lang lang-en_b">Service Heading</h3>
+          <h3 class="lang lang-ar_b" style="display: none;">عنوان الخدمة</h3>
+          <p class="card_data lang lang-en">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam consequatur necessitatibus eaque.
+          </p>
+          <p class="card_data lang lang-ar" style="display: none;">
+              نص عربي مكافئ للوصف المذكور.
+          </p>
+      </div>
+  </div>
+  <div class="column">
+    <div class="card">
+        <div class="icon-wrapper">
+            <i class="fas fa-hammer"></i>
+        </div>
+        <h3 class="lang lang-en_b">Service Heading</h3>
+        <h3 class="lang lang-ar_b" style="display: none;">عنوان الخدمة</h3>
+        <p class="card_data lang lang-en">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam consequatur necessitatibus eaque.
+        </p>
+        <p class="card_data lang lang-ar" style="display: none;">
+            نص عربي مكافئ للوصف المذكور.
+        </p>
     </div>
   </div>
-
-
-
-</section>
-    <!-- Services  -->
-
-
-    <section class="sevices_section container1 " id="services">
-    
-        <h2 class="section-heading">Our Services</h2>
-    
-      <div class="row">
-        <div class="column">
-          <div class="card">
-            <div class="icon-wrapper">
+    <div class="column">
+      <div class="card">
+          <div class="icon-wrapper">
               <i class="fas fa-hammer"></i>
-            </div>
-            <h3>Service Heading</h3>
-            <p class="card_data" >
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam
-              consequatur necessitatibus eaque.
-            </p>
           </div>
-        </div>
-        <div class="column">
-          <div class="card">
-            <div class="icon-wrapper">
-              <i class="fas fa-brush"></i>
-            </div>
-            <h3>Service Heading</h3>
-            <p class="card_data">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam
-              consequatur necessitatibus eaque.
-            </p>
-          </div>
-        </div>
-        <div class="column">
-          <div class="card">
-            <div class="icon-wrapper">
-              <i class="fas fa-wrench"></i>
-            </div>
-            <h3>Service Heading</h3>
-            <p class="card_data">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam
-              consequatur necessitatibus eaque.
-            </p>
-          </div>
-        </div>
-        <div class="column">
-          <div class="card">
-            <div class="icon-wrapper">
-              <i class="fas fa-truck-pickup"></i>
-            </div>
-            <h3>Service Heading</h3>
-            <p class="card_data">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam
-              consequatur necessitatibus eaque.
-            </p>
-          </div>
-        </div>
-        <div class="column">
-          <div class="card">
-            <div class="icon-wrapper">
-              <i class="fas fa-broom"></i>
-            </div>
-            <h3>Service Heading</h3>
-            <p class="card_data">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam
-              consequatur necessitatibus eaque.
-            </p>
-          </div>
-        </div>
-        <div class="column">
-          <div class="card">
-            <div class="icon-wrapper">
-              <i class="fas fa-plug"></i>
-            </div>
-            <h3>Service Heading</h3>
-            <p class="card_data">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam
-              consequatur necessitatibus eaque.
-            </p>
-          </div>
-        </div>
+          <h3 class="lang lang-en_b">Service Heading</h3>
+          <h3 class="lang lang-ar_b" style="display: none;">عنوان الخدمة</h3>
+          <p class="card_data lang lang-en">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam consequatur necessitatibus eaque.
+          </p>
+          <p class="card_data lang lang-ar" style="display: none;">
+              نص عربي مكافئ للوصف المذكور.
+          </p>
       </div>
-    </section>
-
-    <!-- Our Clients  sectiom  -->
-    
-    <section id="clients"  class="sevices_section container1">
-      <!-- <div class="container1"> -->
-        <h2>Our Clients</h2>
-        <div class="logos">
-          <div class="logos-slide">
-            <img src="images/logos/3m.svg" />
-            <img src="images/logos/barstool-store.svg" />
-            <img src="images/logos/budweiser.svg" />
-            <img src="images/logos/buzzfeed.svg" />
-            <img src="images/logos/forbes.svg" />
-            <img src="images/logos/macys.svg" />
-            <img src="images/logos/menshealth.svg" />
-            <img src="images/logos/mrbeast.svg" />
-          </div>
-    
-          <div class="logos-slide">
-            <img src="images/logos/3m.svg" />
-            <img src="images/logos/barstool-store.svg" />
-            <img src="images/logos/budweiser.svg" />
-            <img src="images/logos/buzzfeed.svg" />
-            <img src="images/logos/forbes.svg" />
-            <img src="images/logos/macys.svg" />
-            <img src="images/logos/menshealth.svg" />
-            <img src="images/logos/mrbeast.svg" />
-          </div>
+  </div>
+  <div class="column">
+    <div class="card">
+        <div class="icon-wrapper">
+            <i class="fas fa-hammer"></i>
         </div>
-      <!-- </div> -->
-    </section>
+        <h3 class="lang lang-en_b">Service Heading</h3>
+        <h3 class="lang lang-ar_b" style="display: none;">عنوان الخدمة</h3>
+        <p class="card_data lang lang-en">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam consequatur necessitatibus eaque.
+        </p>
+        <p class="card_data lang lang-ar" style="display: none;">
+            نص عربي مكافئ للوصف المذكور.
+        </p>
+    </div>
+</div>
+<div class="column">
+  <div class="card">
+      <div class="icon-wrapper">
+          <i class="fas fa-hammer"></i>
+      </div>
+      <h3 class="lang lang-en_b">Service Heading</h3>
+      <h3 class="lang lang-ar_b" style="display: none;">عنوان الخدمة</h3>
+      <p class="card_data lang lang-en">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam consequatur necessitatibus eaque.
+      </p>
+      <p class="card_data lang lang-ar" style="display: none;">
+          نص عربي مكافئ للوصف المذكور.
+      </p>
+  </div>
+</div>
+      <!-- Repeat the above block for each service with appropriate translations -->
+  </div>
+</section>
+<section id="clients" class="services_section container1">
+  <h2 class="lang lang-en_b">Our Clients</h2>
+  <h2 class="lang lang-ar_b" style="display: none;">عملاؤنا</h2>
 
+  <div class="logos">
+      <div class="logos-slide">
+          <!-- List of logos -->
+          <img src="images/logos/logo1.png" alt="3M"/>
+          <img src="images/logos/logo2.png" alt="3M"/>
+          <img src="images/logos/logo3.png" alt="3M"/>
+          <img src="images/logos/logo4.png" alt="3M"/>
+          <img src="images/logos/logo5.png" alt="3M"/>
+          <img src="images/logos/logo6.png" alt="3M"/>
+          <img src="images/logos/logo7.png" alt="3M"/>
+          <img src="images/logos/logo8.png" alt="3M"/>
+          <img src="images/logos/logo9.png" alt="3M"/>
+          <img src="images/logos/logo10.png" alt="3M"/>
+          
+          <!-- Add more images as above with appropriate alt text -->
+      </div>
 
-       
-        </div>
-    
-    </section>
+      <div class="logos-slide">
+        <!-- List of logos -->
+        <img src="images/logos/logo1.png" alt="3M"/>
+        <img src="images/logos/logo2.png" alt="3M"/>
+        <img src="images/logos/logo3.png" alt="3M"/>
+        <img src="images/logos/logo4.png" alt="3M"/>
+        <img src="images/logos/logo5.png" alt="3M"/>
+        <img src="images/logos/logo6.png" alt="3M"/>
+        <img src="images/logos/logo7.png" alt="3M"/>
+        <img src="images/logos/logo8.png" alt="3M"/>
+        <img src="images/logos/logo9.png" alt="3M"/>
+        <img src="images/logos/logo10.png" alt="3M"/>
+      
+        <!-- Add more images as above with appropriate alt text -->
+    </div>
+      <!-- Repeat logos-slide div if needed -->
+  </div>
+</section>
 
 
 
 
     <!-- Testimonials  -->
-
     <section id="testimonials" class="testi_section container1">
-      <h2>Testimonials</h2>
+      <h2 class="lang lang-en">Testimonials</h2>
+      <h2 class="lang lang-ar" style="display: none;">شهادات</h2>
+      
       <div class="testimonials-container">
-        <div class="testimonial-slide">
-          <div class="testimonial">
-            <img src="./images/model-1.jpg" alt="John Doe">
-            <p> <i class="fa-solid fa-quote-left quote"></i> Reliable and professional, they always deliver on time. A trusted partner. <i class="fa-solid fa-quote-right quote"></i></i></p>
+          <div class="testimonial-slide">
+              <div class="testimonial">
+                  <img src="./images/model-1.jpg" alt="John Doe">
+                  <p class="lang lang-en">
+                      <i class="fa-solid fa-quote-left quote"></i> Reliable and professional, they always deliver on time. A trusted partner. <i class="fa-solid fa-quote-right quote"></i>
+                  </p>
+                  <p class="lang lang-ar" style="display: none;">
+                      <i class="fa-solid fa-quote-left quote"></i> موثوق ومحترف، يقومون دائما بالتسليم في الوقت المحدد. شريك موثوق. <i class="fa-solid fa-quote-right quote"></i>
+                  </p>
+                  <h3 class="lang lang-en">- John Doe</h3>
+                  <h3 class="lang lang-ar" style="display: none;">- جون دو</h3>
+              </div>
+              <!-- Repeat for each testimonial -->
+              <div class="testimonial">
+                  <img src="./images/model-2.jpg" alt="Jane Smith">
+                  <p class="lang lang-en">
+                      <i class="fa-solid fa-quote-left quote"></i> Reliable and professional, they always deliver on time. A trusted partner. <i class="fa-solid fa-quote-right quote"></i>
+                  </p>
+                  <p class="lang lang-ar" style="display: none;">
+                      <i class="fa-solid fa-quote-left quote"></i> موثوق ومحترف، يقومون دائما بالتسليم في الوقت المحدد. شريك موثوق. <i class="fa-solid fa-quote-right quote"></i>
+                  </p>
+                  <h3 class="lang lang-en">- Jane Smith</h3>
+                  <h3 class="lang lang-ar" style="display: none;">- جين سميث</h3>
+              </div>
 
-            <h3>- John Doe</h3>
-          </div>
-          <div class="testimonial">
-            <img src="./images/model-2.jpg" alt="Jane Smith">
-            <p> <i class="fa-solid fa-quote-left quote"></i> Reliable and professional, they always deliver on time. A trusted partner. <i class="fa-solid fa-quote-right quote"></i></i></p>
-
-            <h3>- Jane Smith</h3>
-          </div>
-          <div class="testimonial">
-            <img src="./images/model-3.jpg" alt="Ahmed Ali">
-            <p> <i class="fa-solid fa-quote-left quote"></i> Reliable and professional, they always deliver on time. A trusted partner. <i class="fa-solid fa-quote-right quote"></i></i></p>
-            <h3>- Ahmed Ali</h3>
-          </div>
-        </div>
-      </div>
-      <div class="testimonial-controls">
-        <span class="prev">&#10094;</span>
-        <span class="next">&#10095;</span>
-      </div>
-    </section>
-    
-    
-
-
-
-    <!-- Contact section  -->
-    <section id="contact-info">
-      <div class="container1 container_contact">
-        <h2>Contact Information</h2>
-        <div class="contact-content">
-          <div class="contact-details">
-            <h3>Get in Touch with Us</h3>
-            <p class="contact_caption">
-              For inquiries, partnerships, or more information about our services,
-              please contact us:
-            </p>
-          
-               <p><i class="fa-solid fa-location-dot contact_icon"></i> &nbsp; &nbsp;Plot# 114, Area: Bosher, Building # 965 Unit: 43</p>
-            
-
-            <p><i class="fa-solid fa-phone contact_icon"></i> &nbsp; &nbsp;+968 7724 4477</p>
-            <p><i class="fa-solid fa-envelope contact_icon"></i>  &nbsp; &nbsp;
-              <a href="mailto:tilalsharqiya@gmail.com">tilalsharqiya@gmail.com</a>
-            </p>
-            
-            <div class="social-media">
-              <a href="">
-                <i class="fa-brands fa-facebook" style="color: #1877F2"></i>
-              </a>
-              <a href="">
-                <i class="fa-brands fa-square-instagram" style="color: #FD1D1D"></i>
-              </a>
-              <a href="">
-                <i class="fa-brands fa-twitter" style="color: #1da1f2;"></i>
-              </a>
-              <a href="">
-                <i class="fa-brands fa-whatsapp" style="color: #25d366;"></i>
-              </a>
-              <a href="">
-                <i class="fa-brands fa-linkedin" style="color: #0a66c2;"></i>
-              </a>
-
-       
+              <div class="testimonial">
+                <img src="./images/model-1.jpg" alt="Jane Smith">
+                <p class="lang lang-en">
+                    <i class="fa-solid fa-quote-left quote"></i> Reliable and professional, they always deliver on time. A trusted partner. <i class="fa-solid fa-quote-right quote"></i>
+                </p>
+                <p class="lang lang-ar" style="display: none;">
+                    <i class="fa-solid fa-quote-left quote"></i> موثوق ومحترف، يقومون دائما بالتسليم في الوقت المحدد. شريك موثوق. <i class="fa-solid fa-quote-right quote"></i>
+                </p>
+                <h3 class="lang lang-en">- Jane Smith</h3>
+                <h3 class="lang lang-ar" style="display: none;">- جين سميث</h3>
             </div>
+              <!-- More testimonials can be added similarly -->
+          </div>
+      </div>
+      
+      <div class="testimonial-controls">
+          <span class="prev">&#10094;</span>
+          <span class="next">&#10095;</span>
+      </div>
+  </section>
+  
+
+<!-- Contact section -->
+<section id="contact-info">
+  <div class="container1 container_contact">
+      <h2 class="lang lang-en_b">Contact Information</h2>
+      <h2 class="lang lang-ar_b" style="display: none;">معلومات الاتصال</h2>
+      
+      <div class="contact-content">
+          <div class="contact-details">
+              <h3 class="lang lang-en_b">Get in Touch with Us</h3>
+              <h3 class="lang lang-ar_b" style="display: none;">تواصل معنا</h3>
+              <div class="contact_data">
+                <p class="contact_caption lang lang-en_b">
+                  For inquiries, partnerships, or more information about our services, please contact us:
+              </p>
+              <p class="contact_caption lang lang-ar_b" style="display: none;">
+                  للاستفسارات، الشراكات، أو المزيد من المعلومات عن خدماتنا، يرجى التواصل معنا:
+              </p>
+              
+              <p class="lang lang-en_b"><i class="fa-solid fa-location-dot contact_icon"></i> &nbsp; Plot# 114, Area: Bosher, Building # 965 Unit: 43</p>
+              <p class="lang lang-ar_b" style="display: none;"><i class="fa-solid fa-location-dot contact_icon"></i> &nbsp; القطعة رقم 114، منطقة: بوشر، مبنى رقم 965 وحدة: 43</p>
+              
+              <p class="lang lang-en_b"><i class="fa-solid fa-phone contact_icon"></i> &nbsp; <span>+968 7724 4477</span></p>
+              <p class="lang lang-ar_b" style="display: none;"><i class="fa-solid fa-phone contact_icon"></i> &nbsp;<span>4477 7724 968+</span> </p>
+              
+              <p class="lang lang-en_b"><i class="fa-solid fa-envelope contact_icon"></i> &nbsp; <a href="mailto:tilalsharqiya@gmail.com">tilalsharqiya@gmail.com</a></p>
+              <p class="lang lang-ar_b" style="display: none;"><i class="fa-solid fa-envelope contact_icon"></i> &nbsp; <a href="mailto:tilalsharqiya@gmail.com">tilalsharqiya@gmail.com</a></p>
+              
+              </div>
+              
+              <div class="social-media">
+
+                <a href="">
+                  <i class="fa-brands fa-facebook" style="color: #1877F2"></i>
+                </a>
+                <a href="">
+                  <i class="fa-brands fa-square-instagram" style="color: #FD1D1D"></i>
+                </a>
+                <a href="">
+                  <i class="fa-brands fa-twitter" style="color: #1da1f2;"></i>
+                </a>
+                <a href="">
+                  <i class="fa-brands fa-whatsapp" style="color: #25d366;"></i>
+                </a>
+                <a href="">
+                  <i class="fa-brands fa-linkedin" style="color: #0a66c2;"></i>
+                </a>
+  
+                  <!-- Icons remain the same, no need to duplicate -->
+              </div>
           </div>
           <div class="contact-form">
-            <form action="#" method="post">
-              <div class="form-group">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-              </div>
-              <div class="form-group">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-              </div>
-              <div class="form-group">
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="4" required></textarea>
-              </div>
-              <button type="submit" class="btn">Send Message</button>
-            </form>
+              <form action="#" method="post">
+                  <div class="form-group">
+                      <label for="name" class="lang lang-en">Name:</label>
+                      <label for="name" class="lang lang-ar" style="display: none;">الاسم:</label>
+                      <input type="text" id="name" name="name" required>
+                  </div>
+                  <div class="form-group">
+                      <label for="email" class="lang lang-en">Email:</label>
+                      <label for="email" class="lang lang-ar" style="display: none;">البريد الإلكتروني:</label>
+                      <input type="email" id="email" name="email" required>
+                  </div>
+                  <div class="form-group">
+                      <label for="message" class="lang lang-en">Message:</label>
+                      <label for="message" class="lang lang-ar" style="display: none;">الرسالة:</label>
+                      <textarea id="message" name="message" rows="4" required></textarea>
+                  </div>
+                  <button type="submit" class="btn lang lang-en">Send Message</button>
+                  <button type="submit" class="btn lang lang-ar" style="display: none;">أرسل الرسالة</button>
+              </form>
           </div>
-        </div>
       </div>
- 
-    </section>
-    <footer>
-      <p><i class="fa-regular fa-copyright"></i> 2024 Tilal Sharqiyah Trading, Oman. &nbsp; All rights reserved.</p>
-          </footer>
+  </div>
+</section>
+
+<footer>
+  <p class="lang lang-en_b"><i class="fa-regular fa-copyright"></i> 2024 Tilal Sharqiyah Trading &nbsp; All rights reserved.</p>
+  <p class="lang lang-ar_b" style="display: none;"><i class="fa-regular fa-copyright"></i> 2024 تلال الشرقية للتجارة &nbsp; جميع الحقوق محفوظة.</p>
+</footer>
+
+
+
         <!-- ======================================== -->
 
         <!-- JavaScript -->
         <script src="js/script.js"></script>
+
+
+        <script>
+
+        
+        
+        </script>
+          
 
   
   </body>

@@ -113,6 +113,57 @@ valueDisplays.forEach((valueDisplay) => {
   typeService();
 
 
+
+
+  const services_ar = [
+    "المستلزمات الطبية",
+    "توريد الأدوات الجراحية",
+    "خدمات النقل",
+    "خدمات البناء",
+    "الخدمات اللوجستية"
+  ];
+
+  let index_ar = 0;
+  const element_ar = document.getElementById('typed-text_ar');
+
+  function typeService_ar() {
+    let service_ar = services_ar[index_ar];
+    let charIndex_ar = 0;
+
+    function typeChar_ar() {
+      if (charIndex_ar < service_ar.length) {
+        element_ar.innerHTML += service_ar.charAt(charIndex_ar);
+        charIndex_ar++;
+        setTimeout(typeChar_ar, 100);
+      } else {
+        setTimeout(eraseService_ar, 2000);
+      }
+    }
+
+    typeChar_ar();
+  }
+
+  function eraseService_ar() {
+    let service_ar = services_ar[index_ar];
+    let charIndex_ar = service_ar.length;
+
+    function eraseChar_ar() {
+      if (charIndex_ar > 0) {
+        element_ar.innerHTML = service_ar.substring(0, charIndex_ar - 1);
+        charIndex_ar--;
+        setTimeout(eraseChar_ar, 50);
+      } else {
+        index_ar = (index_ar + 1) % services_ar.length;
+        setTimeout(typeService_ar, 500);
+      }
+    }
+
+    eraseChar_ar();
+  }
+
+  typeService_ar();
+
+
   // ====================Testimonial================
   document.addEventListener('DOMContentLoaded', function () {
     const testimonials = document.querySelector('.testimonial-slide');
@@ -166,3 +217,58 @@ valueDisplays.forEach((valueDisplay) => {
 
 
   
+
+  function toggleLanguage() {
+    const currentLang = document.body.getAttribute('lang');
+    if (currentLang === 'en') {
+        document.body.setAttribute('lang', 'ar');
+    } else {
+        document.body.setAttribute('lang', 'en');
+    }
+}
+
+
+
+
+
+// =======================
+function toggleLanguage() {
+  const currentLang = document.body.getAttribute('lang');
+  if (currentLang === 'en') {
+    document.body.setAttribute('lang', 'ar');
+    document.querySelectorAll('.lang-en').forEach(el => el.style.display = 'none');
+    document.querySelectorAll('.lang-ar').forEach(el => el.style.display = 'inline');
+    document.querySelectorAll('.lang-en_b').forEach(el => el.style.display = 'none');
+    document.querySelectorAll('.lang-ar_b').forEach(el => el.style.display = 'block');
+  } else {
+    document.body.setAttribute('lang', 'en');
+    document.querySelectorAll('.lang-en').forEach(el => el.style.display = 'inline');
+    document.querySelectorAll('.lang-ar').forEach(el => el.style.display = 'none');
+    document.querySelectorAll('.lang-en_b').forEach(el => el.style.display = 'block');
+    document.querySelectorAll('.lang-ar_b').forEach(el => el.style.display = 'none');
+  }
+  // updateTextDirection();
+
+}
+
+function updateTextDirection() {
+// Update the text direction based on the current language
+const direction = document.body.dataset.lang === 'ar' ? 'rtl' : 'ltr';
+document.body.style.direction = direction;
+}
+
+
+
+
+
+function toggleNav() {
+const navMenu = document.getElementById('nav-menu');
+if (navMenu.classList.contains('show')) {
+navMenu.classList.remove('show');
+} else {
+navMenu.classList.add('show');
+}
+}
+
+// Attach event listener to hamburger icon
+document.querySelector('.hamburger').addEventListener('click', toggleNav);

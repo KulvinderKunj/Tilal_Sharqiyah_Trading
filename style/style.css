@@ -2,6 +2,9 @@
 
    box-sizing: border-box;
 }
+html{
+  scroll-behavior: smooth;
+}
 body {
   font-family: Arial, sans-serif;
   margin: 70px 0 0 0;
@@ -20,89 +23,140 @@ body {
 }
 
 
-   
 /* ================================NAVIGATION ======================== */
 .nav {
   height: 70px;
   top: 0;
+  padding:  0 1em ;
   background: #ffffff;
   position: fixed;
   width: 100%;
   z-index: 1000;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  box-shadow: 0 2px 3px #3188ebfe
-  ;
-}
-nav .logo img {
-  width: 70px;
-  height: 100%;
- 
-}
-nav ul {
-  list-style: none;
-  display: flex;
-  padding: 0;
-  margin: 0;
+  box-shadow: 0 2px 3px #3188ebfe;
 }
 
-nav ul li {
+
+
+.nav .logo img {
+  width: 70px;
+  height: 100%;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.nav ul li {
   margin: 0 15px;
 }
 
-nav .contact-info button {
+.nav .mobile-lang button,.nav .desktop-lang button{
+
   background: #4B91E3;
   border: none;
-  margin-right: 10px; 
   padding: 10px 20px;
   color: #fff;
   cursor: pointer;
   border-radius: 5px;
   font-size: 1rem;
-   transition: background-color 0.3s;
+  /* transition: background-color 0.3s; */
 }
 
-nav .contact-info button:hover {
+.nav .lang button:hover, .nav .mobile-lang button:hover {
   background: #3188eb;
 }
 
-nav ul li a {
-    color: #3D3E3B;
-    text-decoration: none;
-    font-size: 1.1rem;
-    transition: color 0.3s, text-decoration 0.3s;  /* Include text-decoration in the transition for smooth effect */
-    padding-bottom: 2px;  /* Provides spacing for the underline */
-    position: relative;  /* Establishes the position context for the pseudo-element */
+.nav ul li a {
+  color: #3D3E3B;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: color 0.3s;
 }
 
- nav ul li a:hover {
-    color: #3D3E3B;
-    text-decoration: none;  /* Ensures that no default text underline is applied */
-}  
+.nav ul li a:hover {
+  color: #4B91E3;
+}
 
-nav ul li a:hover:after {
-    content: '';  /* Necessary to generate the box */
-    position: absolute;
-    bottom: 0;  /* Aligns the pseudo-element at the bottom of the link */
-    left: 0;
-    width: 100%;  /* Ensures the underline covers the full width of the text */
-    height: 2px;  /* Height of the underline */
-    background-color: #4B91E3;  /* Color of the underline */
-    transition: width 0.3s;  /* Smooth transition for the underline */
+.nav .hamburger {
+  display: none;
+  cursor: pointer;
+  /* position: absolute; */
+  /* right: 10px; */
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+  .nav .mobile-lang button {
+    display: none;
+  }
+
+  .nav .desktop-lang {
+    display: block;
+  }
+
+}
+@media (max-width: 768px) {
+  .nav .hamburger {
+    display: block;
+  }
+ 
+
+
+  .nav ul {
+    flex-direction: column;
+    position: fixed;
+    right: 0;
+    top: 70px;
+    background: #ffffff;
+    width: 100%;
+    display: none;
+  }
+
+  .nav ul li {
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .nav ul.show {
+    display: flex;
+  }
+
+  .nav .mobile-lang button {
+    display: block;
+  }
+
+  .nav .desktop-lang {
+    display: none;
+  }
+}
+
+/* Hamburger Icon toggle */
+.hamburger i {
+  font-size: 2rem;
+  color: #4B91E3;
 }
 
 
-
+ 
 /* ================================HEADER =================== */
 header .hero {
-  background: linear-gradient(#2c7bfe, rgba(180, 178, 178, 0.5)), url("/Tilal_Sharqiyah_Trading_Website/images/slider1.jpg") no-repeat center center/cover;
+  background: linear-gradient(#266bdb, rgba(180, 178, 178, 0.5)), url("../images/silder2.jpg") no-repeat center center/cover;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
-  color: #fff;
+  color: #fff;;
 }
 
 header .hero .overlay {
@@ -151,7 +205,7 @@ header .hero .overlay p {
   
 }
 
-#typed-text{
+#typed-text, #typed-text_ar{
   font-weight: bold;
   color:#2c7bfe ;
 
@@ -551,7 +605,8 @@ align-items: center;
 }
 
 .logos-slide img {
-  height: 3em;
+  height: 5em;
+  width: 10em;
   margin: 0 40px;
 }
 
@@ -690,6 +745,11 @@ h2 {
 .testimonials-container {
   position: relative;
   overflow: hidden;
+
+
+
+
+  
   width: 80%;
   margin: auto;
 }
@@ -758,12 +818,70 @@ h2 {
 }
 footer p{
   width: 100%;
-
+  font-size: 15px;
   padding: 15px;
   text-align: center;
   margin: 0;
-  color: white;
+  color: rgb(215, 215, 215);
   background-color: #282828
 
   ;
+}
+
+.contact_data{
+  text-align: center;
+  
+
+
+}
+
+
+/* =================== */
+
+/* ============================================
+ */
+
+
+
+body[lang="ar"] {
+  direction: rtl;
+  text-align: right;
+}
+
+/* Adjustments for other sections as needed */
+body[lang="ar"] .about-text, body[lang="ar"] .facts_section {
+  text-align: right;
+}
+
+body[lang="ar"] .facts_section{
+  direction: ltr;
+}
+
+body[lang="ar"] .about-text h3 {
+  text-align: left;
+  
+
+}
+
+
+body[lang="ar"] .services_section, body[lang="ar"] .facts_section {
+  text-align: right;
+}
+
+body[lang="ar"] , .testi_section{
+  direction: ltr;
+}
+
+
+body[lang="ar"] p{
+  direction: rtl;
+}
+
+body[lang="ar"] .contact-content{
+  gap: 5vh;
+}
+
+body[lang="ar"] .overlay h1{
+  direction: rtl;
+  gap: 5vh;
 }

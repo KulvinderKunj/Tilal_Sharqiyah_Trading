@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About Us - Tilal Sharqiyah Trading & Logistics</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/style.css">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/fb74ed147c.js" crossorigin="anonymous"></script>
+    <style>
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+.header {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.header .logo img {
+    width: 150px;
+}
+
+.header .nav ul {
+    list-style: none;
+    display: flex;
+}
+
+.header .nav ul li {
+    margin-left: 20px;
+}
+
+.header .nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.header .nav ul li a:hover {
+    color: #ff6600;
+}
+
+.about, .mission, .values, .strategic-focus, .community-engagement {
+    padding: 40px 20px;
+    background: #fff;
+    margin-bottom: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+h1, h2, h3 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+.value, .focus, .engagement {
+    margin-bottom: 20px;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.value:hover, .focus:hover, .engagement:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.value i, .focus i, .engagement i {
+    font-size: 50px;
+    color: #ff6600;
+    margin-bottom: 10px;
+}
+
+.footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer p {
+    margin: 0;
+}
+
+    </style>
+</head>
+<body>
+    <nav class="nav">
+        <!-- Hamburger Menu -->
+        <!-- logo -->
+        <div class="logo">
+          <img src="images/logo.png" alt="Logo" />
+    
+        </div>
+        <div class="hamburger">
+          <i class="fa fa-bars" aria-hidden="true"></i>
+        </div>
+        <!-- Menu -->
+        <ul id="nav-menu">
+          <li><a href="#home" class="lang lang-en">Home</a><a href="#home" class="lang lang-ar" style="display: none;">الرئيسية</a></li>
+          <li><a href="#about" class="lang lang-en">About</a><a href="#about" class="lang lang-ar" style="display: none;">عن الشركة</a></li>
+          <li><a href="#services" class="lang lang-en">Services</a><a href="#services" class="lang lang-ar" style="display: none;">الخدمات</a></li>
+          <li><a href="#clients" class="lang lang-en">Clients</a><a href="#clients" class="lang lang-ar" style="display: none;">العملاء</a></li>
+          <li><a href="#contact" class="lang lang-en">Contact</a><a href="#contact" class="lang lang-ar" style="display: none;">تواصل</a></li>
+          <li class="mobile-lang">      <button id="language-toggle" onclick="toggleLanguage()">العربية / English</button></li>
+        </ul>
+        <div class="desktop-lang">
+          <button id="language-toggle" onclick="toggleLanguage()">العربية / English</button>
+        </div>
+      </nav>
+      
+    <section class="about">
+        <div class="container">
+            <h1>About Us</h1>
+            <p>Tilal Sharqiyah Trading & Logistics is a dynamic and multifaceted organization dedicated to excellence across a spectrum of industries. With over a decade of experience, we have established ourselves as a trusted partner in healthcare supplies, logistics, construction, and transportation. Our commitment to delivering superior quality and efficiency has propelled us to the forefront of these sectors, making us a preferred choice for clients seeking reliable and innovative solutions.</p>
+        </div>
+    </section>
+
+    <section class="mission">
+        <div class="container">
+            <h2>Our Mission</h2>
+            <p>At Tilal Sharqiyah Trading & Logistics, our mission is to provide superior-quality services and innovative solutions across our key operational sectors: healthcare supplies, logistics, construction, and transportation. We are deeply committed to integrity, exceptional service, and pioneering innovations that not only meet the needs of our clients but also drive substantial advancements within the industries we serve. We aim to be at the forefront of transforming challenges into opportunities, fostering sustainable development, and enhancing the quality of life in our communities.</p>
+        </div>
+    </section>
+
+    <section class="values">
+        <div class="container">
+            <h2>Our Values</h2>
+            <div class="value">
+                <i class="fas fa-award"></i>
+                <h3>Excellence</h3>
+                <p>We pursue excellence relentlessly, ensuring that every project and initiative is executed with the highest standards. Our approach is characterized by meticulous attention to detail and an unwavering commitment to delivering results that surpass expectations.</p>
+            </div>
+            <div class="value">
+                <i class="fas fa-handshake"></i>
+                <h3>Integrity</h3>
+                <p>Our business is built on a foundation of ethical practices and transparency. We uphold the highest standards of honesty and fairness in all our dealings, ensuring trustworthiness and dependability in every business relationship.</p>
+            </div>
+            <div class="value">
+                <i class="fas fa-lightbulb"></i>
+                <h3>Innovation</h3>
+                <p>At the core of our operations lies a continuous drive for innovation. We embrace new technologies and innovative approaches that enable us to stay ahead in a highly competitive market, ensuring we can adapt to changes and emerging challenges effectively.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="strategic-focus">
+        <div class="container">
+            <h2>Strategic Focus</h2>
+            <div class="focus">
+                <i class="fas fa-users"></i>
+                <h3>Client-Centric Approach</h3>
+                <p>Our strategies are designed around the needs of our clients. We engage in deep market analysis and client consultations to ensure our services are perfectly aligned with their expectations and demands. By understanding our clients' unique challenges and goals, we deliver tailored solutions that drive success.</p>
+            </div>
+            <div class="focus">
+                <i class="fas fa-leaf"></i>
+                <h3>Sustainability Initiatives</h3>
+                <p>We are committed to sustainability, integrating environmentally friendly practices into our projects and operations. This commitment extends to promoting green initiatives, reducing waste, and utilizing sustainable materials whenever possible. Our goal is to minimize our environmental footprint while maximizing the positive impact on the communities we serve.</p>
+            </div>
+            <div class="focus">
+                <i class="fas fa-check-circle"></i>
+                <h3>Quality Assurance</h3>
+                <p>Quality is at the heart of everything we do. We adhere to rigorous quality control measures and industry best practices to ensure that our products and services meet the highest standards of excellence. Our dedicated quality assurance team continuously monitors and improves our processes to maintain our reputation for reliability and superior performance.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="community-engagement">
+        <div class="container">
+            <h2>Community Engagement</h2>
+            <div class="engagement">
+                <i class="fas fa-heart"></i>
+                <h3>Corporate Social Responsibility (CSR)</h3>
+                <p>We believe in giving back to the communities where we operate. Our CSR activities are focused on education, healthcare, and environmental conservation. We engage in various initiatives that promote health awareness, support educational programs, and contribute to the greening of our environment. Our efforts are aimed at creating a positive and lasting impact on society.</p>
+            </div>
+            <div class="engagement">
+                <i class="fas fa-hands-helping"></i>
+                <h3>Partnerships and Collaborations</h3>
+                <p>We actively seek partnerships with local and international organizations to expand our impact on community development. These collaborations help us bring innovative solutions and improved services to underserved areas, enhancing community life and well-being. By working together with stakeholders, we strive to create a more inclusive and prosperous future for all.</p>
+            </div>
+            <div class="engagement">
+                <i class="fas fa-users-cog"></i>
+                <h3>Employee Engagement</h3>
+                <p>Our employees are our greatest asset. We foster a culture of engagement, inclusion, and continuous learning to ensure that our team members are motivated and equipped to deliver their best work. Through training programs, professional development opportunities, and a supportive work environment, we empower our employees to grow and excel in their careers.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Tilal Sharqiyah Trading & Logistics. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript for animations -->
+    <script src="../js/script.js"></script>
+</body>
+</html>
