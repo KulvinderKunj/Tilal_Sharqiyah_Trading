@@ -29,8 +29,7 @@
       <!-- Hamburger Menu -->
       <!-- logo -->
       <div class="logo">
-        <img src="images/logo.png" alt="Logo" />
-  
+        <a href="index.html"><img src="images/logo.png" alt="Logo" /></a>
       </div>
       <div class="hamburger">
         <i class="fa fa-bars" aria-hidden="true"></i>
@@ -39,7 +38,7 @@
       <ul id="nav-menu">
         <li><a href="#home" class="lang lang-en">Home</a><a href="#home" class="lang lang-ar" style="display: none;">الرئيسية</a></li>
         <li><a href="pages/aboutUs.html" class="lang lang-en">About</a><a href="#about" class="lang lang-ar" style="display: none;">عن الشركة</a></li>
-        <li><a href="#services" class="lang lang-en">Services</a><a href="#services" class="lang lang-ar" style="display: none;">الخدمات</a></li>
+        <li><a href="pages/services.html" class="lang lang-en">Services</a><a href="#services" class="lang lang-ar" style="display: none;">الخدمات</a></li>
         <li><a href="#clients" class="lang lang-en">Clients</a><a href="#clients" class="lang lang-ar" style="display: none;">العملاء</a></li>
         <li><a href="#contact" class="lang lang-en">Contact</a><a href="#contact" class="lang lang-ar" style="display: none;">تواصل</a></li>
         <li class="mobile-lang">      <button id="language-toggle" onclick="toggleLanguage()">العربية / English</button></li>
@@ -69,8 +68,8 @@
           <p class="lang lang-en">Your Trusted Partner in <span id="typed-text"></span>|</p>
           <p class="lang lang-ar" style="display:none;">شريكك الموثوق في <span id="typed-text_ar"></span>|</p>
           <div class="cta-buttons">
-              <a href="#about-us" class="btn lang lang-en">Learn More</a>
-              <a href="#about-us" class="btn lang lang-ar" style="display:none;">اعرف أكثر</a>
+              <a href="pages/services.html" class="btn lang lang-en">Learn More</a>
+              <a href="pages/services.html" class="btn lang lang-ar" style="display:none;">اعرف أكثر</a>
               <a href="#contact" class="btn lang lang-en">Contact Us</a>
               <a href="#contact" class="btn lang lang-ar" style="display:none;">اتصل بنا</a>
           </div>
@@ -83,7 +82,7 @@
 <section id="about-us" class="about">
   <div class="about-container">
       <div class="about-text container1">
-          <h2 class="lang lang-en_b">Our Mission</h2>
+          <h2 class="lang lang-en_b">About Us</h2>
           <h2 class="lang lang-ar_b" style="display: none;">مهمتنا</h2>
           <h3><i class="fa-solid fa-quote-left"></i></h3>
           <p class="lang lang-en">
@@ -99,7 +98,7 @@
           </p>
           <br>
           <br>
-          <button class="lang lang-en">Read More</button>
+         <a href="pages/aboutUs.html"><button class="lang lang-en">Read More</button></a> 
           <button class="lang lang-ar" style="display:none;">اقرأ المزيد</button>
       </div>
       <div class="about-image">
@@ -109,6 +108,10 @@
       </div>
   </div>
 </section>
+
+
+
+
 
 <section class="facts_section container1">
   <div class="wrapper">
@@ -141,6 +144,7 @@
 
 
 
+logistics_Services
 
 <section class="services_section container1" id="services">
   <h2 class="section-heading lang lang-en_b">Our Services</h2>
@@ -148,27 +152,45 @@
 
   <div class="row">
       <!-- Multiple service cards like the one below -->
-      <div class="column">
-        <div class="card">
-            <div class="icon-wrapper">
-                <i class="fas fa-hammer"></i>
+
+        <div class="column" >
+            <div class="card" onclick="location.href='pages/services.html#medicine_Supplies';" style="cursor: pointer;">
+                <div class="icon-wrapper">
+                    <i class="fas fa-hammer"></i>
+                </div>
+                <h3 class="lang lang-en_b">Medicine Supplies</h3>
+                <h3 class="lang lang-ar_b" style="display: none;">عنوان الخدمة</h3>
+                <p class="card_data lang lang-en">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam consequatur necessitatibus eaque.
+                </p>
+                <p class="card_data lang lang-ar" style="display: none;">
+                    نص عربي مكافئ للوصف المذكور.
+                </p>
             </div>
-            <h3 class="lang lang-en_b">Service Heading</h3>
-            <h3 class="lang lang-ar_b" style="display: none;">عنوان الخدمة</h3>
-            <p class="card_data lang lang-en">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam consequatur necessitatibus eaque.
-            </p>
-            <p class="card_data lang lang-ar" style="display: none;">
-                نص عربي مكافئ للوصف المذكور.
-            </p>
         </div>
-    </div>
+        <div class="column">
+            <div class="card" onclick="location.href='pages/services.html#surgical_Items_Supply';" style="cursor: pointer;">
+                <div class="icon-wrapper">
+                    <i class="fas fa-hammer"></i>
+                </div>
+                <h3 class="lang lang-en_b">surgical Items Supply</h3>
+                <h3 class="lang lang-ar_b" style="display: none;">عنوان الخدمة</h3>
+                <p class="card_data lang lang-en">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam consequatur necessitatibus eaque.
+                </p>
+                <p class="card_data lang lang-ar" style="display: none;">
+                    نص عربي مكافئ للوصف المذكور.
+                </p>
+            </div>
+        </div>
+    
+    
     <div class="column">
-      <div class="card">
+      <div class="card" onclick="location.href='pages/services.html#transportation_Services';" style="cursor: pointer;">
           <div class="icon-wrapper">
               <i class="fas fa-hammer"></i>
           </div>
-          <h3 class="lang lang-en_b">Service Heading</h3>
+          <h3 class="lang lang-en_b">Transportation Services</h3>
           <h3 class="lang lang-ar_b" style="display: none;">عنوان الخدمة</h3>
           <p class="card_data lang lang-en">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam consequatur necessitatibus eaque.
@@ -179,11 +201,11 @@
       </div>
   </div>
   <div class="column">
-    <div class="card">
+    <div class="card" onclick="location.href='pages/services.html#construction_Services';" style="cursor: pointer;">
         <div class="icon-wrapper">
             <i class="fas fa-hammer"></i>
         </div>
-        <h3 class="lang lang-en_b">Service Heading</h3>
+        <h3 class="lang lang-en_b">Construction Services</h3>
         <h3 class="lang lang-ar_b" style="display: none;">عنوان الخدمة</h3>
         <p class="card_data lang lang-en">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam consequatur necessitatibus eaque.
@@ -193,12 +215,12 @@
         </p>
     </div>
   </div>
-    <div class="column">
-      <div class="card">
+    <div class="column" >
+      <div class="card" onclick="location.href='pages/services.html#logistics_Services';" style="cursor: pointer;">
           <div class="icon-wrapper">
               <i class="fas fa-hammer"></i>
           </div>
-          <h3 class="lang lang-en_b">Service Heading</h3>
+          <h3 class="lang lang-en_b">Logistics Services</h3>
           <h3 class="lang lang-ar_b" style="display: none;">عنوان الخدمة</h3>
           <p class="card_data lang lang-en">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam consequatur necessitatibus eaque.
@@ -209,11 +231,11 @@
       </div>
   </div>
   <div class="column">
-    <div class="card">
+    <div class="card" onclick="location.href='pages/services.html#cleaning_Services';" style="cursor: pointer;">
         <div class="icon-wrapper">
             <i class="fas fa-hammer"></i>
         </div>
-        <h3 class="lang lang-en_b">Service Heading</h3>
+        <h3 class="lang lang-en_b">Cleaning Services</h3>
         <h3 class="lang lang-ar_b" style="display: none;">عنوان الخدمة</h3>
         <p class="card_data lang lang-en">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam consequatur necessitatibus eaque.
@@ -223,21 +245,7 @@
         </p>
     </div>
 </div>
-<div class="column">
-  <div class="card">
-      <div class="icon-wrapper">
-          <i class="fas fa-hammer"></i>
-      </div>
-      <h3 class="lang lang-en_b">Service Heading</h3>
-      <h3 class="lang lang-ar_b" style="display: none;">عنوان الخدمة</h3>
-      <p class="card_data lang lang-en">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam consequatur necessitatibus eaque.
-      </p>
-      <p class="card_data lang lang-ar" style="display: none;">
-          نص عربي مكافئ للوصف المذكور.
-      </p>
-  </div>
-</div>
+
       <!-- Repeat the above block for each service with appropriate translations -->
   </div>
 </section>
@@ -338,7 +346,7 @@
   
 
 <!-- Contact section -->
-<section id="contact-info">
+<section id="contact">
   <div class="container1 container_contact">
       <h2 class="lang lang-en_b">Contact Information</h2>
       <h2 class="lang lang-ar_b" style="display: none;">معلومات الاتصال</h2>
@@ -377,7 +385,7 @@
                 <a href="">
                   <i class="fa-brands fa-twitter" style="color: #1da1f2;"></i>
                 </a>
-                <a href="">
+                <a href="https://wa.me/971554114220">
                   <i class="fa-brands fa-whatsapp" style="color: #25d366;"></i>
                 </a>
                 <a href="">
@@ -388,7 +396,8 @@
               </div>
           </div>
           <div class="contact-form">
-              <form action="#" method="post">
+            <form action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="45ede14a-7122-4a69-9c02-45ff04a79328">
                   <div class="form-group">
                       <label for="name" class="lang lang-en">Name:</label>
                       <label for="name" class="lang lang-ar" style="display: none;">الاسم:</label>
@@ -404,7 +413,7 @@
                       <label for="message" class="lang lang-ar" style="display: none;">الرسالة:</label>
                       <textarea id="message" name="message" rows="4" required></textarea>
                   </div>
-                  <button type="submit" class="btn lang lang-en">Send Message</button>
+                  <button type="submit" class="btn lang lang-en" >Send Message</button>
                   <button type="submit" class="btn lang lang-ar" style="display: none;">أرسل الرسالة</button>
               </form>
           </div>
@@ -425,12 +434,7 @@
         <script src="js/script.js"></script>
 
 
-        <script>
 
-        
-        
-        </script>
-          
 
   
   </body>

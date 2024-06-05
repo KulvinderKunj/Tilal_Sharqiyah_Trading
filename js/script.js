@@ -272,3 +272,22 @@ navMenu.classList.add('show');
 
 // Attach event listener to hamburger icon
 document.querySelector('.hamburger').addEventListener('click', toggleNav);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Scroll_Padding_
+
+const navigatorHeight = document.querySelector('.nav').offsetHeight;
+document.documentElement.style.setProperty('--scroll-padding-top', navigatorHeight + 'px');

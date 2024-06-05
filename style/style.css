@@ -4,6 +4,7 @@
 }
 html{
   scroll-behavior: smooth;
+  scroll-padding-top: var(--scroll-padding-top, 50px);
 }
 body {
   font-family: Arial, sans-serif;
@@ -12,6 +13,7 @@ body {
   color: #333;
   background-color: #f9f7f7;
 } 
+
 
 
 .container1 h2 {
@@ -41,7 +43,7 @@ body {
 
 
 .nav .logo img {
-  width: 70px;
+  width: 150px;
   height: 100%;
 }
 
@@ -843,24 +845,22 @@ footer p{
 
 
 
-body[lang="ar"] {
-  direction: rtl;
-  text-align: right;
-}
+
 
 /* Adjustments for other sections as needed */
 body[lang="ar"] .about-text, body[lang="ar"] .facts_section {
   text-align: right;
 }
-
 body[lang="ar"] .facts_section{
   direction: ltr;
 }
 
+
+/* done  */
+
 body[lang="ar"] .about-text h3 {
   text-align: left;
   
-
 }
 
 
