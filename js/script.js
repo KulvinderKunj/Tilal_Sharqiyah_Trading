@@ -1,6 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
 
-
     // IntersectionObserver for animation on scroll
     const observer = new IntersectionObserver(entries => {
         entries.forEach(entry => {
@@ -164,6 +163,11 @@ valueDisplays.forEach((valueDisplay) => {
   typeService_ar();
 
 
+
+
+
+
+
   // ====================Testimonial================
   document.addEventListener('DOMContentLoaded', function () {
     const testimonials = document.querySelector('.testimonial-slide');
@@ -218,6 +222,8 @@ valueDisplays.forEach((valueDisplay) => {
 
   
 
+
+
   function toggleLanguage() {
     const currentLang = document.body.getAttribute('lang');
     if (currentLang === 'en') {
@@ -226,11 +232,6 @@ valueDisplays.forEach((valueDisplay) => {
         document.body.setAttribute('lang', 'en');
     }
 }
-
-
-
-
-
 // =======================
 function toggleLanguage() {
   const currentLang = document.body.getAttribute('lang');
@@ -269,24 +270,8 @@ navMenu.classList.remove('show');
 navMenu.classList.add('show');
 }
 }
-
 // Attach event listener to hamburger icon
 document.querySelector('.hamburger').addEventListener('click', toggleNav);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // Scroll_Padding_
 
 const navigatorHeight = document.querySelector('.nav').offsetHeight;
