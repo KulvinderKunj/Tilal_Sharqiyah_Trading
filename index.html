@@ -4,43 +4,35 @@
     <meta charset="UTF-8" />
     <title>Tilal Sharqiyah Trading</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Font Awsome -->
+    <!-- ====================================Font Awsome================================ -->
     <script
       src="https://kit.fontawesome.com/fb74ed147c.js"
       crossorigin="anonymous"
     ></script>
-     <!-- CSS -->
+      <!-- ====================================CSS================================ -->
      <link rel="stylesheet" href="style/style.css" />
-
-
-
-
-
-     <!-- +++++++++Other+++++ -->
-
-
-
 
   </head>
 
-  <!-- Body starts  -->
+     <!-- ====================================Body start================================ -->
   <body>
+       <!-- ====================================Navigation bar start================================ -->
     <nav class="nav">
-      <!-- Hamburger Menu -->
       <!-- logo -->
       <div class="logo">
         <a href="index.html"><img src="images/logo.png" alt="Logo" /></a>
       </div>
+      <!-- Hamburger Menu (ONLY FOR SMALLER SCREENS) -->
       <div class="hamburger">
         <i class="fa fa-bars" aria-hidden="true"></i>
       </div>
-      <!-- Menu -->
+      <!-- Menu (ONLY FOR LARGE SCREENS) -->
       <ul id="nav-menu">
         <li><a href="#home" class="lang lang-en">Home</a><a href="#home" class="lang lang-ar" style="display: none;">الرئيسية</a></li>
-        <li><a href="pages/aboutUs.html" class="lang lang-en">About</a><a href="#about" class="lang lang-ar" style="display: none;">عن الشركة</a></li>
-        <li><a href="pages/services.html" class="lang lang-en">Services</a><a href="#services" class="lang lang-ar" style="display: none;">الخدمات</a></li>
-        <li><a href="#clients" class="lang lang-en">Clients</a><a href="#clients" class="lang lang-ar" style="display: none;">العملاء</a></li>
-        <li><a href="#contact" class="lang lang-en">Contact</a><a href="#contact" class="lang lang-ar" style="display: none;">تواصل</a></li>
+        <li><a href="pages/aboutUs.html" class="lang lang-en">About Us</a><a href="#about" class="lang lang-ar" style="display: none;">عن الشركة</a></li>
+        <li><a href="pages/services.html" class="lang lang-en">Our Services</a><a href="#services" class="lang lang-ar" style="display: none;">الخدمات</a></li>
+        <li><a href="#clients" class="lang lang-en">Our Partners</a><a href="#clients" class="lang lang-ar" style="display: none;">العملاء</a></li>
+        <li><a href="#contact" class="lang lang-en">Contact Us</a><a href="#contact" class="lang lang-ar" style="display: none;">تواصل</a></li>
         <li class="mobile-lang">      <button id="language-toggle" onclick="toggleLanguage()">العربية / English</button></li>
       </ul>
       <div class="desktop-lang">
@@ -50,8 +42,7 @@
     
     
     
-
-<!-- Home section -->
+   <!-- ====================================Home start================================ -->
 <header id="home">
   <div class="hero">
       <div class="overlay">
@@ -85,20 +76,24 @@
           <h2 class="lang lang-en_b">About Us</h2>
           <h2 class="lang lang-ar_b" style="display: none;">مهمتنا</h2>
           <h3><i class="fa-solid fa-quote-left"></i></h3>
-          <p class="lang lang-en">
-              To provide high-quality services and solutions in medicine
-              resources, surgical objects supply, transportation and logistics
-              services whilst upholding the highest standards of exceptional,
-              integrity, and innovation.
+          <p class="lang lang-en_b">
+            At Tilal Sharqiyah Trading, we are a 
+            dynamic and multifaceted organisation dedicated to
+             excellence in number of industries. Established with a
+              dedication to delivering superior quality and efficiency
+            , we've emerged as a trusted partner in the fields of medical
+             supplies, surgical items supply, transportation, construction, logistics, and Cleaning offerings.
           </p>
-          <p class="lang lang-ar" style="display: none;">
+          <p class="lang lang-ar_b" style="display: none;">
               تقديم خدمات وحلول عالية الجودة في مجال الموارد الطبية،
               توريد الأدوات الجراحية، خدمات النقل والخدمات اللوجستية مع الحفاظ
               على أعلى معايير الاستثنائية، النزاهة، والابتكار.
           </p>
-          <br>
-          <br>
-         <a href="pages/aboutUs.html"><button class="lang lang-en">Read More</button></a> 
+        
+          <!-- .mission-section -->
+          
+          <button class="lang lang-en" onclick="window.location.href='pages/aboutUs.html'">Read More</button>
+
           <button class="lang lang-ar" style="display:none;">اقرأ المزيد</button>
       </div>
       <div class="about-image">
@@ -156,12 +151,12 @@ logistics_Services -->
         <div class="column" >
             <div class="card" onclick="location.href='pages/services.html#medicine_Supplies';" style="cursor: pointer;">
                 <div class="icon-wrapper">
-                    <i class="fas fa-hammer"></i>
+                    <i class="fa-solid fa-hand-holding-medical"></i>
                 </div>
-                <h3 class="lang lang-en_b">Medicine Supplies</h3>
+                <h3 class="lang lang-en_b">Medical Supplies</h3>
                 <h3 class="lang lang-ar_b" style="display: none;">عنوان الخدمة</h3>
                 <p class="card_data lang lang-en">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam consequatur necessitatibus eaque.
+                    Experience unmatched quality and reliability in medical supplies with our extensive range, designed to meet all your healthcare needs
                 </p>
                 <p class="card_data lang lang-ar" style="display: none;">
                     نص عربي مكافئ للوصف المذكور.
@@ -171,12 +166,12 @@ logistics_Services -->
         <div class="column">
             <div class="card" onclick="location.href='pages/services.html#surgical_Items_Supply';" style="cursor: pointer;">
                 <div class="icon-wrapper">
-                    <i class="fas fa-hammer"></i>
+                    <i class="fa-solid fa-syringe"></i>
                 </div>
-                <h3 class="lang lang-en_b">surgical Items Supply</h3>
+                <h3 class="lang lang-en_b">Surgical Items Supply</h3>
                 <h3 class="lang lang-ar_b" style="display: none;">عنوان الخدمة</h3>
                 <p class="card_data lang lang-en">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam consequatur necessitatibus eaque.
+                    Your trusted partner in surgical supplies, offering meticulously designed, high-quality products that meet rigorous contemporary standards
                 </p>
                 <p class="card_data lang lang-ar" style="display: none;">
                     نص عربي مكافئ للوصف المذكور.
@@ -188,12 +183,12 @@ logistics_Services -->
     <div class="column">
       <div class="card" onclick="location.href='pages/services.html#transportation_Services';" style="cursor: pointer;">
           <div class="icon-wrapper">
-              <i class="fas fa-hammer"></i>
+            <i class="fa-solid fa-truck-plane"></i>
           </div>
           <h3 class="lang lang-en_b">Transportation Services</h3>
           <h3 class="lang lang-ar_b" style="display: none;">عنوان الخدمة</h3>
           <p class="card_data lang lang-en">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam consequatur necessitatibus eaque.
+            Delivering top-tier transportation services—reliable, efficient, and safe—for all your personal and business travel needs
           </p>
           <p class="card_data lang lang-ar" style="display: none;">
               نص عربي مكافئ للوصف المذكور.
@@ -208,22 +203,25 @@ logistics_Services -->
         <h3 class="lang lang-en_b">Construction Services</h3>
         <h3 class="lang lang-ar_b" style="display: none;">عنوان الخدمة</h3>
         <p class="card_data lang lang-en">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam consequatur necessitatibus eaque.
+            <!-- Your ultimate partner for exceptional construction services, combining superior craftsmanship and reliable solutions to transform your vision into stunning, enduring spaces -->
+            Your premier construction partner, delivering superior craftsmanship and reliable solutions to transform your vision into a stunning, enduring reality
         </p>
         <p class="card_data lang lang-ar" style="display: none;">
             نص عربي مكافئ للوصف المذكور.
         </p>
     </div>
   </div>
+
+
     <div class="column" >
       <div class="card" onclick="location.href='pages/services.html#logistics_Services';" style="cursor: pointer;">
           <div class="icon-wrapper">
-              <i class="fas fa-hammer"></i>
+            <i class="fa-solid fa-truck-fast"></i>
           </div>
           <h3 class="lang lang-en_b">Logistics Services</h3>
           <h3 class="lang lang-ar_b" style="display: none;">عنوان الخدمة</h3>
           <p class="card_data lang lang-en">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam consequatur necessitatibus eaque.
+            Your reliable logistics partner, delivering swift, secure, and customized transportation solutions for seamless goods deliver
           </p>
           <p class="card_data lang lang-ar" style="display: none;">
               نص عربي مكافئ للوصف المذكور.
@@ -233,12 +231,12 @@ logistics_Services -->
   <div class="column">
     <div class="card" onclick="location.href='pages/services.html#cleaning_Services';" style="cursor: pointer;">
         <div class="icon-wrapper">
-            <i class="fas fa-hammer"></i>
+            <i class="fa-solid fa-broom"></i>
         </div>
         <h3 class="lang lang-en_b">Cleaning Services</h3>
         <h3 class="lang lang-ar_b" style="display: none;">عنوان الخدمة</h3>
         <p class="card_data lang lang-en">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam consequatur necessitatibus eaque.
+            Your go-to for reliable, detailed, and tailored cleaning services for homes and businesses, ensuring pristine and hygienic environments
         </p>
         <p class="card_data lang lang-ar" style="display: none;">
             نص عربي مكافئ للوصف المذكور.
@@ -431,6 +429,7 @@ logistics_Services -->
 
         <!-- JavaScript -->
         <script src="js/script.js"></script>
+     
 
 
 

@@ -2,83 +2,99 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>About Us - Tilal Sharqiyah Trading & Logistics</title>
+    <title>Our Services - Tilal Sharqiyah Trading</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../style/style.css">
     <script src="https://kit.fontawesome.com/fb74ed147c.js" crossorigin="anonymous"></script>
     <style>
-     
+
+        
+:root {
+  --secondary-color: #3188eb;
+  --primary-color: #2081ef;
+ 
+  --background-color1: #f9f7f7;
+  --text-color: #333;
+  --white-color: #ffffff;
+  --black-color: #000000;
+  --gray-color: #575a7b;
+  --light-gray-color: #f8f8f8;
+  --heading-color: #154161; 
+}
+     html{
+         scroll-padding-top: var(--scroll-padding-top, 50px);
+     }
         .container {
             width: 100%;
             margin: auto;
             overflow: hidden;
         }
+       
         .service-section {
-            /* height: 90vh; */
-            padding: 50px 20px;
+            
+            display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
         }
         .service-header {
             text-align: center;
             margin-bottom: 40px;
         }
         .service-header h2 {
-            font-size: 2.5rem;
-            color: #333;
+            font-size: 1.5rem;
+            color: var(--heading-color);
         }
         .service-header p {
-            font-size: 1.2rem;
-            color: #666;
+        
+             width: 80vw;
+            color: var(--text-color);
         }
-        .slider {
-      
-            margin: 40px;
-            position: relative;
+    
+  
+
+        /* ============================= */
+
+
+        .card1 {
+            margin: 20px;
+            background-color: #2c7bfe;
+
+            border-radius: 15px;
             overflow: hidden;
-        }
-        .slides {
-            display: flex;
-            transition: transform 0.5s ease-in-out;
-        }
-        .slide {
-            min-width: 100%;
-            box-sizing: border-box;
-            padding: 20px;
-            background: #fff;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            border-radius: 10px;
+            width: 250px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
             text-align: center;
         }
-        .slide img {
-            width: 300px;
-            height: auto;
-            border-radius: 10px;
-        }
-        .slide h3 {
-            margin-top: 20px;
-            font-size: 1.5rem;
-            color: #333;
-        }
-        .slide p {
-            margin-top: 10px;
-            font-size: 1rem;
-            color: #666;
-        }
-        .nav-buttons {
-            position: absolute;
-            top: 50%;
+        .card1 img {
+            padding: auto;
+            object-fit: cover;
             width: 100%;
-            display: flex;
-            justify-content: space-between;
-            transform: translateY(-50%);
+            height: 20vh;
         }
-        .nav-buttons button {
-            background: rgba(255, 255, 255, 0.7);
-            border: none;
-            padding: 10px;
-            cursor: pointer;
-            border-radius: 50%;
-            font-size: 1.5rem;
+    
+        .card1 .details h3 {
+            margin: 10px 0;
+            color: var(--white-color);
         }
+    
+     h1{
+        padding-top: 80px;
+        text-align: center;
+        color: var(--primary-color);
+     }
+    /* ===================== */
+    @media (max-width: 768px) {
+
+        .service-section {
+
+    height: 100%;
+    margin: 20px;
+        }
+
+    }
+     
     </style>
 </head>
 <body>
@@ -97,10 +113,10 @@
         <!-- Menu -->
         <ul id="nav-menu">
           <li><a href="../index.html" class="lang lang-en">Home</a><a href="#home" class="lang lang-ar" style="display: none;">الرئيسية</a></li>
-          <li><a href="../pages/aboutUs.html" class="lang lang-en">About</a><a href="#about" class="lang lang-ar" style="display: none;">عن الشركة</a></li>
-          <li><a href="#" class="lang lang-en">Services</a><a href="#services" class="lang lang-ar" style="display: none;">الخدمات</a></li>
-          <li><a href="../index.html#clients" class="lang lang-en">Clients</a><a href="#clients" class="lang lang-ar" style="display: none;">العملاء</a></li>
-          <li><a href="../index.html#contact" class="lang lang-en">Contact</a><a href="#contact" class="lang lang-ar" style="display: none;">تواصل</a></li>
+          <li><a href="../pages/aboutUs.html" class="lang lang-en">About Us</a><a href="#about" class="lang lang-ar" style="display: none;">عن الشركة</a></li>
+          <li><a href="#" class="lang lang-en">Our Services</a><a href="#services" class="lang lang-ar" style="display: none;">الخدمات</a></li>
+          <li><a href="../index.html#clients" class="lang lang-en">Our Partners</a><a href="#clients" class="lang lang-ar" style="display: none;">العملاء</a></li>
+          <li><a href="../index.html#contact" class="lang lang-en">Contact Us</a><a href="#contact" class="lang lang-ar" style="display: none;">تواصل</a></li>
           <li class="mobile-lang">      <button id="language-toggle" onclick="toggleLanguage()">العربية / English</button></li>
         </ul>
         <div class="desktop-lang">
@@ -108,190 +124,506 @@
         </div>
       </nav>
 
-    <div class="container">
+    <div class="container1">
+        <h1>Our Services</h1>
         <section class="service-section" id="medicine_Supplies">
             <div class="service-header">
                 <h2>Medicine Supplies</h2>
-                <p>Description of pharmaceutical products and medical supplies. Highlight the commitment to ensuring healthcare facilities have access to essential resources.</p>
+                <p>
+                    Discover unparalleled quality in medical supplies with our extensive range of products designed to meet all your healthcare needs. From cutting-edge equipment to essential supplies, we ensure reliability and excellence. Trust us to deliver superior healthcare solutions. Explore our selection today and experience the difference in quality and service.
+                </p>
             </div>
-            <div class="slider">
-                <div class="slides">
-                    <div class="slide">
-                        <img src="../images/model-1.jpg" alt="Medicine Supplies">
-                        <h3>Cardio Vascular Instruments</h3>
-                        <p>Instruments and consumables for cardiovascular surgeries.</p>
-                    </div>
-                    <div class="slide">
-                        <img src="../images/model-2.jpg" alt="Medicine Supplies">
-                        <h3>Cardio Vascular Instruments</h3>
-                        <p>Instruments and consumables for cardiovascular surgeries.</p>
-                    </div>
-                    <div class="slide">
-                        <img src="../images/silder2.jpg" alt="Medicine Supplies">
-                        <h3>Cardio Vascular Instruments</h3>
-                        <p>Instruments and consumables for cardiovascular surgeries.</p>
-                    </div>
-                    <!-- Add more slides as needed -->
-                </div>
-                <div class="nav-buttons">
-                    <button class="prev">&#10094;</button>
-                    <button class="next">&#10095;</button>
-                </div>
-            </div>
+     
+  <div class="products">
+  
+
+    <div class="products-slide">
+      <!-- List of logos -->
+      <div class="card1">
+        <img src="https://via.placeholder.com/250x200" alt="Product Image">
+        <div class="details">
+            <h3>PRODUCT1</h3>
+          
+        </div>
+    </div>
+    <div class="card1">
+        <img src="https://via.placeholder.com/250x200" alt="Product Image">
+        <div class="details">
+            <h3>PRODUCT2
+            </h3>
+           
+        </div>
+    </div>
+    <div class="card1">
+        <img src="https://via.placeholder.com/250x200" alt="Product Image">
+        <div class="details">
+            <h3>PRODUCT3</h3>
+          
+        </div>
+    </div>
+    <div class="card1">
+        <img src="https://via.placeholder.com/250x200" alt="Product Image">
+        <div class="details">
+            <h3>PRODUCT 4</h3>
+         
+        </div>
+    </div>
+     
+    
+      <!-- Add more images as above with appropriate alt text -->
+  </div>
+  <div class="products-slide">
+    <!-- List of logos -->
+    <div class="card1">
+        <img src="https://via.placeholder.com/250x200" alt="Product Image">
+        <div class="details">
+            <h3>PRODUCT5</h3>
+        
+        </div>
+    </div>
+    <div class="card1">
+        <img src="https://via.placeholder.com/250x200" alt="Product Image">
+        <div class="details">
+            <h3>PRODUCT6</h3>
+     
+        </div>
+    </div>
+    <div class="card1">
+        <img src="https://via.placeholder.com/250x200" alt="Product Image">
+        <div class="details">
+            <h3>PRODUCT7</h3>
+         
+         
+        </div>
+    </div>
+    <div class="card1">
+        <img src="https://via.placeholder.com/250x200" alt="Product Image">
+        <div class="details">
+            <h3>PRODUCT8</h3>
+    
+        </div>
+    </div>
+     
+
+  
+    <!-- Add more images as above with appropriate alt text -->
+</div>
+    <!-- Repeat logos-slide div if needed -->
+</div>
         </section>
 
         <section class="service-section" id="surgical_Items_Supply">
             <div class="service-header">
                 <h2>Surgical Items Supply</h2>
-                <p>Description of surgical instruments, equipment, and consumables. Emphasize precision and confidence in surgeries.</p>
+                <p>Your trusted partner in premium surgical supplies. We present an extensive range of high-quality products, meticulously designed to meet the rigorous standards of contemporary surgical practices. Delve into our curated selection for dependable, precision-engineered solutions that guarantee safety and excellence in every procedure.</p>
             </div>
-            <div class="slider">
-                <div class="slides">
-                    <div class="slide">
-                        <img src="../images/silder2.jpg" alt="Surgical Items">
-                        <h3>Operation Theater Equipment</h3>
-                        <p>High-quality equipment for surgical operations.</p>
+            <div class="products">
+  
+
+                <div class="products-slide">
+                  <!-- List of logos -->
+                  <div class="card1">
+                    <img src="https://via.placeholder.com/250x200" alt="Product Image">
+                    <div class="details">
+                        <h3>PRODUCT1</h3>
+                      
                     </div>
-                    <div class="slide">
-                        <img src="../images/slider1.jpg" alt="Surgical Items">
-                        <h3>Operation Theater Equipment</h3>
-                        <p>High-quality equipment for surgical operations.</p>
-                    </div>
-                    <div class="slide">
-                        <img src="../images/silder2.jpg" alt="Surgical Items">
-                        <h3>Operation Theater Equipment</h3>
-                        <p>High-quality equipment for surgical operations.</p>
-                    </div>
-                    <!-- Add more slides as needed -->
                 </div>
-                <div class="nav-buttons">
-                    <button class="prev">&#10094;</button>
-                    <button class="next">&#10095;</button>
+                <div class="card1">
+                    <img src="https://via.placeholder.com/250x200" alt="Product Image">
+                    <div class="details">
+                        <h3>PRODUCT2
+                        </h3>
+                       
+                    </div>
                 </div>
+                <div class="card1">
+                    <img src="https://via.placeholder.com/250x200" alt="Product Image">
+                    <div class="details">
+                        <h3>PRODUCT3</h3>
+                      
+                    </div>
+                </div>
+                <div class="card1">
+                    <img src="https://via.placeholder.com/250x200" alt="Product Image">
+                    <div class="details">
+                        <h3>PRODUCT 4</h3>
+                     
+                    </div>
+                </div>
+                 
+                
+                  <!-- Add more images as above with appropriate alt text -->
+              </div>
+              <div class="products-slide">
+                <!-- List of logos -->
+                <div class="card1">
+                    <img src="https://via.placeholder.com/250x200" alt="Product Image">
+                    <div class="details">
+                        <h3>PRODUCT5</h3>
+                    
+                    </div>
+                </div>
+                <div class="card1">
+                    <img src="https://via.placeholder.com/250x200" alt="Product Image">
+                    <div class="details">
+                        <h3>PRODUCT6</h3>
+                 
+                    </div>
+                </div>
+                <div class="card1">
+                    <img src="https://via.placeholder.com/250x200" alt="Product Image">
+                    <div class="details">
+                        <h3>PRODUCT7</h3>
+                     
+                     
+                    </div>
+                </div>
+                <div class="card1">
+                    <img src="https://via.placeholder.com/250x200" alt="Product Image">
+                    <div class="details">
+                        <h3>PRODUCT8</h3>
+                
+                    </div>
+                </div>
+                 
+            
+              
+                <!-- Add more images as above with appropriate alt text -->
+            </div>
+                <!-- Repeat logos-slide div if needed -->
             </div>
         </section>
 
         <section class="service-section" id="transportation_Services">
             <div class="service-header">
                 <h2>Transportation Services</h2>
-                <p>Description of services including freight forwarding, logistics management, and customs clearance.</p>
+                <p>Your trusted provider of top-notch transportation services. We offer reliable, efficient, and safe solutions for all your transport needs. Whether for personal or business purposes, we ensure your journey is smooth and hassle-free. Explore our services and travel with confidence!</p>
             </div>
-            <div class="slider">
-                <div class="slides">
-                    <div class="slide">
-                        <img src="../images/silder2.jpg" alt="Transportation Services">
-                        <h3>Logistics Services</h3>
-                        <p>Comprehensive logistics solutions for businesses of all sizes.</p>
+            <div class="products">
+  
+
+                <div class="products-slide">
+                  <!-- List of logos -->
+                  <div class="card1">
+                    <img src="https://via.placeholder.com/250x200" alt="Product Image">
+                    <div class="details">
+                        <h3>PRODUCT1</h3>
+                      
                     </div>
-                    <div class="slide">
-                        <img src="../images/slider1.jpg" alt="Transportation Services">
-                        <h3>Logistics Services</h3>
-                        <p>Comprehensive logistics solutions for businesses of all sizes.</p>
-                    </div>
-                    <div class="slide">
-                        <img src="../images/silder2.jpg" alt="Transportation Services">
-                        <h3>Logistics Services</h3>
-                        <p>Comprehensive logistics solutions for businesses of all sizes.</p>
-                    </div>
-                    <!-- Add more slides as needed -->
                 </div>
-                <div class="nav-buttons">
-                    <button class="prev">&#10094;</button>
-                    <button class="next">&#10095;</button>
+                <div class="card1">
+                    <img src="https://via.placeholder.com/250x200" alt="Product Image">
+                    <div class="details">
+                        <h3>PRODUCT2
+                        </h3>
+                       
+                    </div>
                 </div>
+                <div class="card1">
+                    <img src="https://via.placeholder.com/250x200" alt="Product Image">
+                    <div class="details">
+                        <h3>PRODUCT3</h3>
+                      
+                    </div>
+                </div>
+                <div class="card1">
+                    <img src="https://via.placeholder.com/250x200" alt="Product Image">
+                    <div class="details">
+                        <h3>PRODUCT 4</h3>
+                     
+                    </div>
+                </div>
+                 
+                
+                  <!-- Add more images as above with appropriate alt text -->
+              </div>
+              <div class="products-slide">
+                <!-- List of logos -->
+                <div class="card1">
+                    <img src="https://via.placeholder.com/250x200" alt="Product Image">
+                    <div class="details">
+                        <h3>PRODUCT5</h3>
+                    
+                    </div>
+                </div>
+                <div class="card1">
+                    <img src="https://via.placeholder.com/250x200" alt="Product Image">
+                    <div class="details">
+                        <h3>PRODUCT6</h3>
+                 
+                    </div>
+                </div>
+                <div class="card1">
+                    <img src="https://via.placeholder.com/250x200" alt="Product Image">
+                    <div class="details">
+                        <h3>PRODUCT7</h3>
+                     
+                     
+                    </div>
+                </div>
+                <div class="card1">
+                    <img src="https://via.placeholder.com/250x200" alt="Product Image">
+                    <div class="details">
+                        <h3>PRODUCT8</h3>
+                
+                    </div>
+                </div>
+                 
+            
+              
+                <!-- Add more images as above with appropriate alt text -->
+            </div>
+                <!-- Repeat logos-slide div if needed -->
             </div>
         </section>
 
         <section class="service-section" id="construction_Services">
             <div class="service-header">
                 <h2>Construction Services</h2>
-                <p>Overview of infrastructure development and civil engineering projects. Emphasis on successful project completion.</p>
+                <p>Your ultimate partner for exceptional construction services, delivering superior craftsmanship and reliable solutions for every project. With keen attention to detail and a commitment to excellence, we meet the highest standards. From concept to completion, our dedicated team works closely with you to bring your vision to life, transforming aspirations into stunning, enduring spaces.</p>
             </div>
-            <div class="slider">
-                <div class="slides">
-                    <div class="slide">
-                        <img src="../images/silder2.jpg" alt="Construction Services">
-                        <h3>Infrastructure Development</h3>
-                        <p>Expertise in developing robust infrastructure projects.</p>
+            <div class="products">
+  
+
+                <div class="products-slide">
+                  <!-- List of logos -->
+                  <div class="card1">
+                    <img src="https://via.placeholder.com/250x200" alt="Product Image">
+                    <div class="details">
+                        <h3>PRODUCT1</h3>
+                      
                     </div>
-                    <div class="slide">
-                        <img src="../images/slider1.jpg" alt="Construction Services">
-                        <h3>Infrastructure Development</h3>
-                        <p>Expertise in developing robust infrastructure projects.</p>
-                    </div>
-                    <div class="slide">
-                        <img src="../images/silder2.jpg" alt="Construction Services">
-                        <h3>Infrastructure Development</h3>
-                        <p>Expertise in developing robust infrastructure projects.</p>
-                    </div>
-                    <!-- Add more slides as needed -->
                 </div>
-                <div class="nav-buttons">
-                    <button class="prev">&#10094;</button>
-                    <button class="next">&#10095;</button>
+                <div class="card1">
+                    <img src="https://via.placeholder.com/250x200" alt="Product Image">
+                    <div class="details">
+                        <h3>PRODUCT2
+                        </h3>
+                       
+                    </div>
                 </div>
+                <div class="card1">
+                    <img src="https://via.placeholder.com/250x200" alt="Product Image">
+                    <div class="details">
+                        <h3>PRODUCT3</h3>
+                      
+                    </div>
+                </div>
+                <div class="card1">
+                    <img src="https://via.placeholder.com/250x200" alt="Product Image">
+                    <div class="details">
+                        <h3>PRODUCT 4</h3>
+                     
+                    </div>
+                </div>
+                 
+                
+                  <!-- Add more images as above with appropriate alt text -->
+              </div>
+              <div class="products-slide">
+                <!-- List of logos -->
+                <div class="card1">
+                    <img src="https://via.placeholder.com/250x200" alt="Product Image">
+                    <div class="details">
+                        <h3>PRODUCT5</h3>
+                    
+                    </div>
+                </div>
+                <div class="card1">
+                    <img src="https://via.placeholder.com/250x200" alt="Product Image">
+                    <div class="details">
+                        <h3>PRODUCT6</h3>
+                 
+                    </div>
+                </div>
+                <div class="card1">
+                    <img src="https://via.placeholder.com/250x200" alt="Product Image">
+                    <div class="details">
+                        <h3>PRODUCT7</h3>
+                     
+                     
+                    </div>
+                </div>
+                <div class="card1">
+                    <img src="https://via.placeholder.com/250x200" alt="Product Image">
+                    <div class="details">
+                        <h3>PRODUCT8</h3>
+                
+                    </div>
+                </div>
+                 
+            
+              
+                <!-- Add more images as above with appropriate alt text -->
+            </div>
+                <!-- Repeat logos-slide div if needed -->
             </div>
         </section>
 
         <section class="service-section" id="logistics_Services">
             <div class="service-header">
                 <h2>Logistics Services</h2>
-                <p>Description of cost-effective and efficient supply chain solutions.</p>
+                <p>Your dependable logistics ally, providing swift, punctual, and secure transportation solutions customized for your business requirements. Dedicated to excellence and client satisfaction, we guarantee smooth delivery of your goods. Discover our services and trust us to manage your logistics meticulously and attentively.</p>
             </div>
-            <div class="slider">
-                <div class="slides">
-                    <div class="slide">
-                        <img src="../images/silder2.jpg" alt="Logistics Services">
-                        <h3>Supply Chain Solutions</h3>
-                        <p>Optimized supply chain management for your business.</p>
+            <div class="products">
+  
+
+                <div class="products-slide">
+                  <!-- List of logos -->
+                  <div class="card1">
+                    <img src="https://via.placeholder.com/250x200" alt="Product Image">
+                    <div class="details">
+                        <h3>PRODUCT1</h3>
+                      
                     </div>
-                    <div class="slide">
-                        <img src="../images/slider1.jpg" alt="Logistics Services">
-                        <h3>Supply Chain Solutions</h3>
-                        <p>Optimized supply chain management for your business.</p>
-                    </div>
-                    <div class="slide">
-                        <img src="../images/silder2.jpg" alt="Logistics Services">
-                        <h3>Supply Chain Solutions</h3>
-                        <p>Optimized supply chain management for your business.</p>
-                    </div>
-                    <!-- Add more slides as needed -->
                 </div>
-                <div class="nav-buttons">
-                    <button class="prev">&#10094;</button>
-                    <button class="next">&#10095;</button>
+                <div class="card1">
+                    <img src="https://via.placeholder.com/250x200" alt="Product Image">
+                    <div class="details">
+                        <h3>PRODUCT2
+                        </h3>
+                       
+                    </div>
                 </div>
+                <div class="card1">
+                    <img src="https://via.placeholder.com/250x200" alt="Product Image">
+                    <div class="details">
+                        <h3>PRODUCT3</h3>
+                      
+                    </div>
+                </div>
+                <div class="card1">
+                    <img src="https://via.placeholder.com/250x200" alt="Product Image">
+                    <div class="details">
+                        <h3>PRODUCT 4</h3>
+                     
+                    </div>
+                </div>
+                 
+                
+                  <!-- Add more images as above with appropriate alt text -->
+              </div>
+              <div class="products-slide">
+                <!-- List of logos -->
+                <div class="card1">
+                    <img src="https://via.placeholder.com/250x200" alt="Product Image">
+                    <div class="details">
+                        <h3>PRODUCT5</h3>
+                    
+                    </div>
+                </div>
+                <div class="card1">
+                    <img src="https://via.placeholder.com/250x200" alt="Product Image">
+                    <div class="details">
+                        <h3>PRODUCT6</h3>
+                 
+                    </div>
+                </div>
+                <div class="card1">
+                    <img src="https://via.placeholder.com/250x200" alt="Product Image">
+                    <div class="details">
+                        <h3>PRODUCT7</h3>
+                     
+                     
+                    </div>
+                </div>
+                <div class="card1">
+                    <img src="https://via.placeholder.com/250x200" alt="Product Image">
+                    <div class="details">
+                        <h3>PRODUCT8</h3>
+                
+                    </div>
+                </div>
+                 
+            
+              
+                <!-- Add more images as above with appropriate alt text -->
+            </div>
+                <!-- Repeat logos-slide div if needed -->
             </div>
         </section>
 
         <section class="service-section" id="cleaning_Services">
             <div class="service-header">
                 <h2>Cleaning Services</h2>
-                <p>Description of cost-effective and efficient Cleaning solutions.</p>
+                <p>Your go-to for exceptional cleaning services, we deliver reliable, detailed, and tailored solutions for both homes and businesses. Experience a pristine, hygienic environment with our dedicated team. Discover our services and feel the difference!</p>
             </div>
-            <div class="slider">
-                <div class="slides">
-                    <div class="slide">
-                        <img src="../images/silder2.jpg" alt="Cleaning Services">
-                        <h3>Cleaning Services</h3>
-                        <p>Professional Cleaning of Your House.</p>
+            <div class="products">
+  
+
+                <div class="products-slide">
+                  <!-- List of logos -->
+                  <div class="card1">
+                    <img src="https://via.placeholder.com/250x200" alt="Product Image">
+                    <div class="details">
+                        <h3>PRODUCT1</h3>
+                      
                     </div>
-                    <div class="slide">
-                        <img src="../images/slider1.jpg" alt="Cleaning Services">
-                        <h3>Cleaning Services</h3>
-                        <p>Professional Cleaning of Your House.</p>
-                    </div>
-                    <div class="slide">
-                        <img src="../images/silder2.jpg" alt="Cleaning Services">
-                        <h3>House Cleaning</h3>
-                        <p>Professional Cleaning of Your House.</p>
-                    </div>
-                    <!-- Add more slides as needed -->
                 </div>
-                <div class="nav-buttons">
-                    <button class="prev">&#10094;</button>
-                    <button class="next">&#10095;</button>
+                <div class="card1">
+                    <img src="https://via.placeholder.com/250x200" alt="Product Image">
+                    <div class="details">
+                        <h3>PRODUCT2
+                        </h3>
+                       
+                    </div>
                 </div>
+                <div class="card1">
+                    <img src="https://via.placeholder.com/250x200" alt="Product Image">
+                    <div class="details">
+                        <h3>PRODUCT3</h3>
+                      
+                    </div>
+                </div>
+                <div class="card1">
+                    <img src="https://via.placeholder.com/250x200" alt="Product Image">
+                    <div class="details">
+                        <h3>PRODUCT 4</h3>
+                     
+                    </div>
+                </div>
+                 
+                
+                  <!-- Add more images as above with appropriate alt text -->
+              </div>
+              <div class="products-slide">
+                <!-- List of logos -->
+                <div class="card1">
+                    <img src="https://via.placeholder.com/250x200" alt="Product Image">
+                    <div class="details">
+                        <h3>PRODUCT5</h3>
+                    
+                    </div>
+                </div>
+                <div class="card1">
+                    <img src="https://via.placeholder.com/250x200" alt="Product Image">
+                    <div class="details">
+                        <h3>PRODUCT6</h3>
+                 
+                    </div>
+                </div>
+                <div class="card1">
+                    <img src="https://via.placeholder.com/250x200" alt="Product Image">
+                    <div class="details">
+                        <h3>PRODUCT7</h3>
+                     
+                     
+                    </div>
+                </div>
+                <div class="card1">
+                    <img src="https://via.placeholder.com/250x200" alt="Product Image">
+                    <div class="details">
+                        <h3>PRODUCT8</h3>
+                
+                    </div>
+                </div>
+                 
+            
+              
+                <!-- Add more images as above with appropriate alt text -->
+            </div>
+                <!-- Repeat logos-slide div if needed -->
             </div>
         </section>
     </div>
