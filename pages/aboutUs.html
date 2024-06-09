@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../style/style.css">
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/fb74ed147c.js" crossorigin="anonymous"></script>
+
     <style>
 
 
@@ -179,16 +180,15 @@ section h2{
     </style>
 </head>
 <body>
-    <nav class="nav">
+ <nav class="nav">
         <!-- Hamburger Menu -->
         <!-- logo -->
-        <a href="../index.html">
-            <div class="logo">
-                <img src="../images/logo.png" alt="Logo" />
-          
-              </div>
-        </a>
+      <a href="../index.html">
+        <div class="logo">
+            <img src="../images/logo.png" alt="Logo" />
       
+          </div>
+      </a>  
         <div class="hamburger">
           <i class="fa fa-bars" aria-hidden="true"></i>
         </div>
@@ -196,7 +196,7 @@ section h2{
         <ul id="nav-menu">
           <li><a href="../index.html" class="lang lang-en">Home</a><a href="#home" class="lang lang-ar" style="display: none;">الرئيسية</a></li>
           <li><a href="#" class="lang lang-en">About Us</a><a href="#about" class="lang lang-ar" style="display: none;">عن الشركة</a></li>
-          <li><a href="../pages/services.html" class="lang lang-en">Our Services</a><a href="#services" class="lang lang-ar" style="display: none;">الخدمات</a></li>
+          <li><a href="../index.html#services" class="lang lang-en">Our Services</a><a href="#services" class="lang lang-ar" style="display: none;">الخدمات</a></li>
           <li><a href="../index.html#clients" class="lang lang-en">Our Partners</a><a href="#clients" class="lang lang-ar" style="display: none;">العملاء</a></li>
           <li><a href="../index.html#contact" class="lang lang-en">Contact Us</a><a href="#contact" class="lang lang-ar" style="display: none;">تواصل</a></li>
           <li class="mobile-lang">      <button id="language-toggle" onclick="toggleLanguage()">العربية / English</button></li>
@@ -267,7 +267,22 @@ section h2{
         </div>
     </footer>
     
+      
     <!-- JavaScript for animations -->
-    <script src="../js/script.js"></script>
+          <!-- JavaScript -->
+          <script src="../js/script.js"></script>
+          <script>
+            function toggleNav() {
+const navMenu = document.getElementById('nav-menu');
+if (navMenu.classList.contains('show')) {
+navMenu.classList.remove('show');
+} else {
+navMenu.classList.add('show');
+}
+}
+// Attach event listener to hamburger icon
+document.querySelector('.hamburger').addEventListener('click', toggleNav);
+          </script>
+     
 </body>
 </html>

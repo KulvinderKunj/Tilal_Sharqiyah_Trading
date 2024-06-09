@@ -64,11 +64,12 @@ valueDisplays.forEach((valueDisplay) => {
 
 
   const services = [
-    "Medicine Supplies",
+    "Medical Supplies",
     "Surgical Items Supply",
     "Transportation Services",
     "Construction Services",
-    "Logistics Services"
+    "Logistics Services",
+    "Clearning Services"
   ];
 
   let index = 0;

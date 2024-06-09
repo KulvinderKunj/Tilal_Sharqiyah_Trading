@@ -130,7 +130,9 @@
             <div class="service-header">
                 <h2>Medicine Supplies</h2>
                 <p>
-                    Discover unparalleled quality in medical supplies with our extensive range of products designed to meet all your healthcare needs. From cutting-edge equipment to essential supplies, we ensure reliability and excellence. Trust us to deliver superior healthcare solutions. Explore our selection today and experience the difference in quality and service.
+                    Discover unparalleled quality in medical supplies with our extensive range of products designed to 
+                    meet all your healthcare needs. From cutting-edge equipment to essential supplies, we ensure reliability and excellence. 
+                    Trust us to deliver superior healthcare solutions. Explore our selection today and experience the difference in quality and service.
                 </p>
             </div>
      
@@ -635,23 +637,23 @@
     </footer>
 
     <!-- JavaScript for animations -->
-    <script src="../js/script.js"></script>
-    <script>
-        document.querySelectorAll('.slider').forEach((slider) => {
-            const slides = slider.querySelector('.slides');
-            const prev = slider.querySelector('.prev');
-            const next = slider.querySelector('.next');
-            let index = 0;
-
-            function showSlide(i) {
-                const slidesCount = slides.children.length;
-                index = (i + slidesCount) % slidesCount;
-                slides.style.transform = `translateX(${-index * 100}%)`;
-            }
-
-            prev.addEventListener('click', () => showSlide(index - 1));
-            next.addEventListener('click', () => showSlide(index + 1));
-        });
-    </script>
+          <!-- JavaScript -->
+          <script src="../js/script.js"></script>
+         <!-- JavaScript for animations -->
+          <!-- JavaScript -->
+          <script src="../js/script.js"></script>
+          <script>
+            function toggleNav() {
+const navMenu = document.getElementById('nav-menu');
+if (navMenu.classList.contains('show')) {
+navMenu.classList.remove('show');
+} else {
+navMenu.classList.add('show');
+}
+}
+// Attach event listener to hamburger icon
+document.querySelector('.hamburger').addEventListener('click', toggleNav);
+          </script>
+     
 </body>
 </html>
