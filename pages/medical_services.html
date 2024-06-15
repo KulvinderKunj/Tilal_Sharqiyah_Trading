@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Medical Services - Tilal Sharqiya Trading</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style/style.css" />
+    <script
+      src="https://kit.fontawesome.com/fb74ed147c.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      :root {
+        --secondary-color: #3188eb;
+        --primary-color: #2081ef;
+
+        --background-color1: #f9f7f7;
+        --text-color: #333;
+        --white-color: #ffffff;
+        --black-color: #000000;
+        --gray-color: #575a7b;
+        --light-gray-color: #f8f8f8;
+        --heading-color: #154161;
+      }
+      html {
+        scroll-padding-top: var(--scroll-padding-top, 50px);
+      }
+      .container {
+        width: 100%;
+        margin: auto;
+        overflow: hidden;
+      }
+
+      .service-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 90vh;
+      }
+      .service-header {
+        text-align: center;
+        margin-bottom: 40px;
+      }
+      .service-header h2 {
+        font-size: 1.5rem;
+        color: var(--heading-color);
+      }
+      .service-header p {
+        width: 80vw;
+        color: var(--text-color);
+      }
+
+      /* ============================= */
+
+      .card1 {
+        margin: 20px;
+        background-color: #2c7bfe;
+
+        border-radius: 15px;
+        overflow: hidden;
+        width: 250px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        text-align: center;
+      }
+      .card1 img {
+        padding: auto;
+        object-fit: cover;
+        width: 100%;
+        height: 20vh;
+      }
+
+      .card1 .details h3 {
+        margin: 10px 0;
+        color: var(--white-color);
+      }
+
+      h1 {
+        padding-top: 80px;
+        text-align: center;
+        color: var(--primary-color);
+      }
+      /* ===================== */
+      @media (max-width: 768px) {
+        .service-section {
+          height: 100%;
+          margin: 20px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="nav">
+        <!-- logo -->
+        <div class="logo">
+          <a href="index.html"><img src="../images/logo.png" alt="Logo" /></a>
+        </div>
+      
+        <!-- Hamburger Menu (ONLY FOR SMALLER SCREENS) -->
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      
+        <!-- Menu (ONLY FOR LARGE SCREENS) -->
+        <ul id="nav-menu">
+          <li>
+            <a href="../index.html" class="lang lang-en">Home</a>
+            <a href="../index.html" class="lang lang-ar" style="display: none">الرئيسية</a>
+          </li>
+          <li>
+            <a href="/pages/aboutUs.html" class="lang lang-en">About Us</a>
+            <a href="/pages/aboutUs.html" class="lang lang-ar" style="display: none">عن الشركة</a>
+          </li>
+          <li>
+            <a href="#" class="lang lang-en">Our Services &nbsp;<i class="fa-solid fa-chevron-down"></i> </a>
+            <a href="#" class="lang lang-ar" style="display: none">الخدمات</a>
+            <ul>
+              <li> <a href="#" class="lang lang-en"> Medical Services  <i class="fa-solid fa-chevron-right"></i></a>
+                <a href="#" class="lang lang-ar" style="display: none">العملاء</a>
+                <ul>
+                  <li> <a href="#medical" class="lang lang-en">Medical Supplies</a>
+                    <a href="#medical" class="lang lang-ar" style="display: none">العملاء</a></li>
+                  <li> <a href="#surgical" class="lang lang-en">Surgical Items Supply</a>
+                    <a href="#surgical" class="lang lang-ar" style="display: none">العملاء</a></li>
+                </ul>
+              </li>
+              <li> <a href="#" class="lang lang-en">Other Services<i class="fa-solid fa-chevron-right"></i></a>
+                <a href="" class="lang lang-ar" style="display: none">العملاء</a>
+                <ul>
+                  <li> <a href="/pages/other_services.html#logistics" class="lang lang-en">Logistics</a>
+                    <a href="/pages/other_services.html#logistics" class="lang lang-ar" style="display: none">العملاء</a></li>
+                  <li> <a href="/pages/other_services.html#construction" class="lang lang-en">Construction</a>
+                    <a href="/pages/other_services.html#construction" class="lang lang-ar" style="display: none">العملاء</a></li>
+                    <li> <a href="/pages/other_services.html#cleaning" class="lang lang-en">Cleaning</a>
+                      <a href="/pages/other_services.html#cleaning" class="lang lang-ar" style="display: none">العملاء</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="/index.html#clients" class="lang lang-en">Our Partners</a>
+            <a href="/index.html#clients" class="lang lang-ar" style="display: none">العملاء</a>
+          </li>
+          <li>
+            <a href="/index.html#contact" class="lang lang-en">Contact Us</a>
+            <a href="/index.html#contact" class="lang lang-ar" style="display: none">تواصل</a>
+          </li>
+      
+          <li class="mobile-lang">
+            <button id="language-toggle" onclick="toggleLanguage()">
+              العربية / English
+            </button>
+          </li>
+        </ul>
+        <div class="desktop-lang">
+          <button id="language-toggle" onclick="toggleLanguage()">
+            العربية / English
+          </button>
+        </div>
+      </nav>
+      
+
+    <div class="container1">
+      <h1>Medical Services</h1>
+      <section class="service-section" id="medical">
+        <div class="service-header">
+          <h2>Medical Supplies  </h2>
+          <p>
+            Discover unparalleled quality in medical supplies with our extensive
+            range of products designed to meet all your healthcare needs. From
+            cutting-edge equipment to essential supplies, we ensure reliability
+            and excellence. Trust us to deliver superior healthcare solutions.
+            Explore our selection today and experience the difference in quality
+            and service.
+          </p>
+        </div>
+
+        <div class="products">
+          <div class="products-slide">
+            <!-- List of logos -->
+            <div class="card1">
+              <img
+                src="https://via.placeholder.com/250x200"
+                alt="Product Image"
+              />
+              <div class="details">
+                <h3>PRODUCT1</h3>
+              </div>
+            </div>
+            <div class="card1">
+              <img
+                src="https://via.placeholder.com/250x200"
+                alt="Product Image"
+              />
+              <div class="details">
+                <h3>PRODUCT2</h3>
+              </div>
+            </div>
+            <div class="card1">
+              <img
+                src="https://via.placeholder.com/250x200"
+                alt="Product Image"
+              />
+              <div class="details">
+                <h3>PRODUCT3</h3>
+              </div>
+            </div>
+            <div class="card1">
+              <img
+                src="https://via.placeholder.com/250x200"
+                alt="Product Image"
+              />
+              <div class="details">
+                <h3>PRODUCT 4</h3>
+              </div>
+            </div>
+
+            <!-- Add more images as above with appropriate alt text -->
+          </div>
+          <div class="products-slide">
+            <!-- List of logos -->
+            <div class="card1">
+              <img
+                src="https://via.placeholder.com/250x200"
+                alt="Product Image"
+              />
+              <div class="details">
+                <h3>PRODUCT5</h3>
+              </div>
+            </div>
+            <div class="card1">
+              <img
+                src="https://via.placeholder.com/250x200"
+                alt="Product Image"
+              />
+              <div class="details">
+                <h3>PRODUCT6</h3>
+              </div>
+            </div>
+            <div class="card1">
+              <img
+                src="https://via.placeholder.com/250x200"
+                alt="Product Image"
+              />
+              <div class="details">
+                <h3>PRODUCT7</h3>
+              </div>
+            </div>
+            <div class="card1">
+              <img
+                src="https://via.placeholder.com/250x200"
+                alt="Product Image"
+              />
+              <div class="details">
+                <h3>PRODUCT8</h3>
+              </div>
+            </div>
+
+            <!-- Add more images as above with appropriate alt text -->
+          </div>
+          <!-- Repeat logos-slide div if needed -->
+        </div>
+      </section>
+
+      <section class="service-section" id="surgical">
+        <div class="service-header">
+          <h2>Surgical Items Supply</h2>
+          <p>
+            Your trusted partner in premium surgical supplies. We present an
+            extensive range of high-quality products, meticulously designed to
+            meet the rigorous standards of contemporary surgical practices.
+            Delve into our curated selection for dependable,
+            precision-engineered solutions that guarantee safety and excellence
+            in every procedure.
+          </p>
+        </div>
+        <div class="products">
+          <div class="products-slide">
+            <!-- List of logos -->
+            <div class="card1">
+              <img
+                src="https://via.placeholder.com/250x200"
+                alt="Product Image"
+              />
+              <div class="details">
+                <h3>PRODUCT1</h3>
+              </div>
+            </div>
+            <div class="card1">
+              <img
+                src="https://via.placeholder.com/250x200"
+                alt="Product Image"
+              />
+              <div class="details">
+                <h3>PRODUCT2</h3>
+              </div>
+            </div>
+            <div class="card1">
+              <img
+                src="https://via.placeholder.com/250x200"
+                alt="Product Image"
+              />
+              <div class="details">
+                <h3>PRODUCT3</h3>
+              </div>
+            </div>
+            <div class="card1">
+              <img
+                src="https://via.placeholder.com/250x200"
+                alt="Product Image"
+              />
+              <div class="details">
+                <h3>PRODUCT 4</h3>
+              </div>
+            </div>
+
+            <!-- Add more images as above with appropriate alt text -->
+          </div>
+          <div class="products-slide">
+            <!-- List of logos -->
+            <div class="card1">
+              <img
+                src="https://via.placeholder.com/250x200"
+                alt="Product Image"
+              />
+              <div class="details">
+                <h3>PRODUCT5</h3>
+              </div>
+            </div>
+            <div class="card1">
+              <img
+                src="https://via.placeholder.com/250x200"
+                alt="Product Image"
+              />
+              <div class="details">
+                <h3>PRODUCT6</h3>
+              </div>
+            </div>
+            <div class="card1">
+              <img
+                src="https://via.placeholder.com/250x200"
+                alt="Product Image"
+              />
+              <div class="details">
+                <h3>PRODUCT7</h3>
+              </div>
+            </div>
+            <div class="card1">
+              <img
+                src="https://via.placeholder.com/250x200"
+                alt="Product Image"
+              />
+              <div class="details">
+                <h3>PRODUCT8</h3>
+              </div>
+            </div>
+
+            <!-- Add more images as above with appropriate alt text -->
+          </div>
+          <!-- Repeat logos-slide div if needed -->
+        </div>
+      </section>
+    </div>
+
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; 2024 Tilal Sharqiya Trading. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script >
+
+
+let hamburger = document.querySelector(".hamburger");
+let nav = document.querySelector(".nav");
+hamburger.onclick = function(){
+  nav.classList.toggle('active')
+
+}
+    </script>
+ 
+  </body>
+</html>
