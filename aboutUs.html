@@ -4,9 +4,12 @@
     <meta charset="UTF-8">
     <title>About Us - Tilal Sharqiya Trading </title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/fb74ed147c.js" crossorigin="anonymous"></script>
+    
+<script src="script.js"></script>
 
     <style>
 
@@ -70,15 +73,15 @@ h1 {
     margin-bottom: 20px;
 }
 
-p {
+.content p {
 
-    font-size: 1em; /* Adjust font size according to viewport width */
+    font-size: 1em; 
     color: var(--text-color);
     margin-bottom: 20px;
 }
 
 
-button {
+.content button {
     padding: 10px 20px;
     color: var(--white-color);
     background-color: var(--primary-color);
@@ -179,78 +182,92 @@ section h2{
 
     </style>
 </head>
-<body>
-    <nav class="nav">
-        <!-- logo -->
-        <div class="logo">
-          <a href="index.html"><img src="../images/logo.png" alt="Logo" /></a>
-        </div>
-      
-        <!-- Hamburger Menu (ONLY FOR SMALLER SCREENS) -->
-        <div class="hamburger">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-      
-        <!-- Menu (ONLY FOR LARGE SCREENS) -->
-        <ul id="nav-menu">
-            <li>
-              <a href="../index.html" class="lang lang-en">Home</a>
-              <a href="../index.html" class="lang lang-ar" style="display: none">الرئيسية</a>
-            </li>
-            <li>
-              <a href="#" class="lang lang-en">About Us</a>
-              <a href="#" class="lang lang-ar" style="display: none">عن الشركة</a>
-            </li>
-            <li>
-              <a href="#" class="lang lang-en">Our Services &nbsp;<i class="fa-solid fa-chevron-down"></i> </a>
-              <a href="#" class="lang lang-ar" style="display: none">الخدمات</a>
-              <ul>
-                <li> <a href="#" class="lang lang-en"> Medical Services  <i class="fa-solid fa-chevron-right"></i></a>
-                  <a href="#" class="lang lang-ar" style="display: none">العملاء</a>
-                  <ul>
-                    <li> <a href="/pages/medical_services.html#medical" class="lang lang-en">Medical Supplies</a>
-                      <a href="/pages/medical_services.html#medical" class="lang lang-ar" style="display: none">العملاء</a></li>
-                    <li> <a href="/pages/medical_services.html#surgical" class="lang lang-en">Surgical Items Supply</a>
-                      <a href="/pages/medical_services.html#surgical" class="lang lang-ar" style="display: none">العملاء</a></li>
-                  </ul>
-                </li>
-                <li> <a href="#" class="lang lang-en">Other Services<i class="fa-solid fa-chevron-right"></i></a>
-                  <a href="" class="lang lang-ar" style="display: none">العملاء</a>
-                  <ul>
-                    <li> <a href="/pages/other_services.html#logistics" class="lang lang-en">Logistics</a>
-                      <a href="/pages/other_services.html#logistics" class="lang lang-ar" style="display: none">العملاء</a></li>
-                    <li> <a href="/pages/other_services.html#construction" class="lang lang-en">Construction</a>
-                      <a href="/pages/other_services.html#construction" class="lang lang-ar" style="display: none">العملاء</a></li>
-                      <li> <a href="/pages/other_services.html#cleaning" class="lang lang-en">Cleaning</a>
-                        <a href="/pages/other_services.html#cleaning" class="lang lang-ar" style="display: none">العملاء</a></li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <a href="/index.html#clients" class="lang lang-en">Our Partners</a>
-              <a href="/index.html#clients" class="lang lang-ar" style="display: none">العملاء</a>
-            </li>
-            <li>
-              <a href="/index.html#contact" class="lang lang-en">Contact Us</a>
-              <a href="/index.html#contact" class="lang lang-ar" style="display: none">تواصل</a>
-            </li>
-        
-            <li class="mobile-lang">
-              <button id="language-toggle" onclick="toggleLanguage()">
-                العربية / English
-              </button>
-            </li>
-          </ul>
-        <div class="desktop-lang">
-          <button id="language-toggle" onclick="toggleLanguage()">
-            العربية / English
-          </button>
-        </div>
-      </nav>
-      
+<body lang="en">
+  <nav class="nav">
+    <!-- logo -->
+    <div class="logo">
+      <a href="index.html"><img src="../images/logo.png" alt="Logo" /></a>
+    </div>
+
+    <!-- Hamburger Menu (ONLY FOR SMALLER SCREENS) -->
+    <div class="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <!-- Menu (ONLY FOR LARGE SCREENS) -->
+    <ul id="nav-menu">
+      <li>
+        <a href="index.html" class="lang lang-en_b">Home</a>
+        <a href="index.html" class="lang lang-ar_b" style="display: none">الرئيسية</a>
+      </li>
+      <li>
+        <a href="#" class="lang lang-en_b">About Us</a>
+        <a href="#" class="lang lang-ar_b" style="display: none">عن الشركة</a>
+      </li>
+      <li>
+        <a href="#" class="lang lang-en_b">Our Services &nbsp;<i class="fa-solid fa-chevron-down "></i>  </a>
+        <a href="#" class="lang lang-ar_b" style="display: none" >&nbsp;<i class="fa-solid fa-chevron-down "></i> الخدمات </a>
+        <ul>
+          <li> 
+            <a href="#" class="lang lang-en_b">Medical Services <i class="fa-solid fa-chevron-right"></i></a>
+            <a href="#" class="lang lang-ar_b" style="display: none">&nbsp; <i class="fa-solid fa-chevron-left"></i> الخدمات الطبية</a>
+            <ul>
+              <li>
+                <a href=medical_services.html#medical" class="lang lang-en_b">Medical Supplies</a>
+                <a href="medical_services.html#medical" class="lang lang-ar_b" style="display: none"> المستلزمات الطبية</a>
+              </li>
+              <li>
+                <a href="medical_services.html#surgical" class="lang lang-en_b">Surgical Items Supply</a>
+                <a href="medical_services.html#surgical" class="lang lang-ar_b" style="display: none"> مستلزمات الجراحة</a>
+              </li>
+            </ul>
+          </li>
+          <li> 
+            <a href="#" class="lang lang-en_b">Other Services <i class="fa-solid fa-chevron-right"></i></a>
+            <a href="#" class="lang lang-ar_b" style="display: none">&nbsp; <i class="fa-solid fa-chevron-left"></i> خدمات أخرى</a>
+            <ul> 
+              <li>
+                <a href="other_services.html#logistics" class="lang lang-en_b">Logistics</a>
+                <a href="other_services.html#logistics" class="lang lang-ar_b" style="display: none"> الخدمات اللوجستية</a>
+              </li>
+              <li>
+                <a href="other_services.html#construction" class="lang lang-en_b">Construction</a>
+                <a href="other_services.html#construction" class="lang lang-ar_b" style="display: none"> خدمات البناء</a>
+              </li>
+              <li>
+                <a href="other_services.html#cleaning" class="lang lang-en_b">Cleaning</a>
+                <a href="other_services.html#cleaning" class="lang lang-ar_b" style="display: none"> خدمات التنظيف</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="index.html#clients" class="lang lang-en_b">Our Partners</a>
+        <a href="index.html#clients" class="lang lang-ar_b" style="display: none">شركاؤنا</a>
+      </li>
+      <li>
+        <a href="index.html#contact" class="lang lang-en_b">Contact Us</a>
+        <a href="index.html#contact" class="lang lang-ar_b" style="display: none">تواصل معنا</a>
+      </li>
+
+      <li class="mobile-lang ">
+        <button id="language-toggle" onclick="toggleLanguage()">
+          <p class="lang lang-en_b">العربية</p>
+          <p class="lang lang-ar_b" style="display: none;">English</p>
+        </button>
+      </li>
+    </ul>
+    <div class="desktop-lang">
+      <button id="language-toggle" onclick="toggleLanguage()">
+        <p class="lang lang-en_b">العربية</p>
+          <p class="lang lang-ar_b" style="display: none;">English</p>
+      </button>
+    </div>
+  </nav>
+
     <section class="hero">
         <div class="content">
             <h1 class="about_h1">About Tilal Sharqiya Trading  </h1>
@@ -312,19 +329,23 @@ section h2{
         </div>
     </footer>
     
-      
+    
 
 
-          </script>
+
+
+
+    
           <script>
-            let hamburger = document.querySelector(".hamburger");
-let nav = document.querySelector(".nav");
-hamburger.onclick = function(){
-  nav.classList.toggle('active')
-
-}
+// Ensure the initial state is set correctly
+document.addEventListener("DOMContentLoaded", () => {
+  const lang = localStorage.getItem("lang") || "en";
+  document.body.setAttribute("lang", lang);
+  updateLanguageDisplay(lang);
+});
 
           </script>
+
 
      
 </body>

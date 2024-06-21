@@ -10,11 +10,13 @@
       crossorigin="anonymous"
     ></script>
     <!-- ====================================CSS================================ -->
-    <link rel="stylesheet" href="style/style.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+  
   </head>
 
   <!-- ====================================Body start================================ -->
-  <body>
+  <body lang="en">
     <!-- ====================================Navigation bar start================================ -->
     <!DOCTYPE html>
     <html lang="en">
@@ -44,65 +46,69 @@
             <a href="#home" class="lang lang-ar_b" style="display: none">الرئيسية</a>
           </li>
           <li>
-            <a href="pages/aboutUs.html" class="lang lang-en_b">About Us</a>
-            <a href="pages/aboutUs.html" class="lang lang-ar_b" style="display: none">عن الشركة</a>
+            <a href="aboutUs.html" class="lang lang-en_b">About Us</a>
+            <a href="aboutUs.html" class="lang lang-ar_b" style="display: none">عن الشركة</a>
           </li>
           <li>
-            <a href="#" class="lang lang-en_b">Our Services &nbsp;<i class="fa-solid fa-chevron-down "></i> </a>
-            <a href="#" class="lang lang-ar_b" style="display: none" ><i class="fa-solid fa-chevron-down "></i>الخدمات</a>
+            <a href="#" class="lang lang-en_b">Our Services &nbsp;<i class="fa-solid fa-chevron-down "></i>  </a>
+            <a href="#" class="lang lang-ar_b" style="display: none" >&nbsp;<i class="fa-solid fa-chevron-down "></i> الخدمات </a>
             <ul>
               <li> 
                 <a href="#" class="lang lang-en_b">Medical Services <i class="fa-solid fa-chevron-right"></i></a>
-                <a href="#" class="lang lang-ar_b" style="display: none">الخدمات الطبية</a>
+                <a href="#" class="lang lang-ar_b" style="display: none">&nbsp; <i class="fa-solid fa-chevron-left"></i> الخدمات الطبية</a>
                 <ul>
                   <li>
-                    <a href="pages/medical_services.html#medical" class="lang lang-en">Medical Supplies</a>
-                    <a href="pages/medical_services.html#medical" class="lang lang-ar" style="display: none">المستلزمات الطبية</a>
+                    <a href="medical_services.html#medical" class="lang lang-en_b">Medical Supplies</a>
+                    <a href="medical_services.html#medical" class="lang lang-ar_b" style="display: none"> المستلزمات الطبية</a>
                   </li>
                   <li>
-                    <a href="pages/medical_services.html#surgical" class="lang lang-en">Surgical Items Supply</a>
-                    <a href="pages/medical_services.html#surgical" class="lang lang-ar" style="display: none">مستلزمات الجراحة</a>
+                    <a href="medical_services.html#surgical" class="lang lang-en_b">Surgical Items Supply</a>
+                    <a href="medical_services.html#surgical" class="lang lang-ar_b" style="display: none"> مستلزمات الجراحة</a>
                   </li>
                 </ul>
               </li>
               <li> 
-                <a href="#" class="lang lang-en">Other Services <i class="fa-solid fa-chevron-right"></i></a>
-                <a href="#" class="lang lang-ar" style="display: none">خدمات أخرى</a>
-                <ul>
+                <a href="#" class="lang lang-en_b">Other Services <i class="fa-solid fa-chevron-right"></i></a>
+                <a href="#" class="lang lang-ar_b" style="display: none">&nbsp; <i class="fa-solid fa-chevron-left"></i> خدمات أخرى</a>
+                <ul> 
                   <li>
-                    <a href="pages/other_services.html#logistics" class="lang lang-en">Logistics</a>
-                    <a href="pages/other_services.html#logistics" class="lang lang-ar" style="display: none">الخدمات اللوجستية</a>
+                    <a href="other_services.html#logistics" class="lang lang-en_b">Logistics</a>
+                    <a href="other_services.html#logistics" class="lang lang-ar_b" style="display: none"> الخدمات اللوجستية</a>
                   </li>
                   <li>
-                    <a href="pages/other_services.html#construction" class="lang lang-en">Construction</a>
-                    <a href="pages/other_services.html#construction" class="lang lang-ar" style="display: none">خدمات البناء</a>
+                    <a href="other_services.html#construction" class="lang lang-en_b">Construction</a>
+                    <a href="other_services.html#construction" class="lang lang-ar_b" style="display: none"> خدمات البناء</a>
                   </li>
                   <li>
-                    <a href="pages/other_services.html#cleaning" class="lang lang-en">Cleaning</a>
-                    <a href="pages/other_services.html#cleaning" class="lang lang-ar" style="display: none">خدمات التنظيف</a>
+                    <a href="other_services.html#cleaning" class="lang lang-en_b">Cleaning</a>
+                    <a href="other_services.html#cleaning" class="lang lang-ar_b" style="display: none"> خدمات التنظيف</a>
                   </li>
                 </ul>
               </li>
             </ul>
           </li>
           <li>
-            <a href="#clients" class="lang lang-en">Our Partners</a>
-            <a href="#clients" class="lang lang-ar" style="display: none">شركاؤنا</a>
+            <a href="#clients" class="lang lang-en_b">Our Partners</a>
+            <a href="#clients" class="lang lang-ar_b" style="display: none">شركاؤنا</a>
           </li>
           <li>
-            <a href="#contact" class="lang lang-en">Contact Us</a>
-            <a href="#contact" class="lang lang-ar" style="display: none">تواصل معنا</a>
+            <a href="#contact" class="lang lang-en_b">Contact Us</a>
+            <a href="#contact" class="lang lang-ar_b" style="display: none">تواصل معنا</a>
           </li>
     
-          <li class="mobile-lang">
-            <button id="language-toggle" onclick="toggleLanguage()">
-              العربية / English
+          <li class="mobile-lang ">
+            <button id="language-toggle"   onclick="toggleLanguage()">
+              <p class="lang lang-en_b">العربية</p>
+              <p class="lang lang-ar_b" style="display: none;">English</p>
+         
             </button>
+
           </li>
         </ul>
         <div class="desktop-lang">
           <button id="language-toggle" onclick="toggleLanguage()">
-            العربية / English
+            <p class="lang lang-en_b">العربية</p>
+            <p class="lang lang-ar_b" style="display: none;">English</p>
           </button>
         </div>
       </nav>
@@ -133,18 +139,19 @@
           <p class="lang lang-ar" style="display: none">
             شريكك الموثوق في <span id="typed-text_ar"></span>|
           </p>
-          <div class="cta-buttons">
-            <a href="pages/services.html" class="btn lang lang-en"
+          <div class="cta-buttons ">
+            <a href="services.html" 
+            class="btn lang lang-en_ib"
               >Learn More</a
             >
             <a
-              href="pages/services.html"
-              class="btn lang lang-ar"
+              href="services.html"
+              class="btn lang lang-ar_ib"
               style="display: none"
               >اعرف أكثر</a
             >
-            <a href="#contact" class="btn lang lang-en">Contact Us</a>
-            <a href="#contact" class="btn lang lang-ar" style="display: none"
+            <a href="#contact" class="btn lang lang-en_ib">Contact Us</a>
+            <a href="#contact" class="btn lang lang-ar_ib " style="display: none"
               >اتصل بنا</a
             >
           </div>
@@ -177,7 +184,7 @@
 
           <button
             class="lang lang-en"
-            onclick="window.location.href='pages/aboutUs.html'"
+            onclick="window.location.href=' aboutUs.html'"
           >
             Read More
           </button>
@@ -239,7 +246,7 @@
         <div class="column">
           <div
             class="card"
-            onclick="location.href='pages/med.html#medical';"
+            onclick="location.href='medical.html #medical';"
             style="cursor: pointer"
           >
             <div class="icon-wrapper">
@@ -260,7 +267,7 @@
         <div class="column">
           <div
             class="card"
-            onclick="location.href='pages/medical_services.html#surgical';"
+            onclick="location.href=' medical_services.html#surgical';"
             style="cursor: pointer"
           >
             <div class="icon-wrapper">
@@ -283,7 +290,7 @@
         <div class="column">
           <div
             class="card"
-            onclick="location.href='pages/other_services.html#construction';"
+            onclick="location.href=' other_services.html#construction';"
             style="cursor: pointer"
           >
             <div class="icon-wrapper">
@@ -306,7 +313,7 @@
         <div class="column">
           <div
             class="card"
-            onclick="location.href='pages/other_services.html#logistics';"
+            onclick="location.href=' other_services.html#logistics';"
             style="cursor: pointer"
           >
             <div class="icon-wrapper">
@@ -326,7 +333,7 @@
         <div class="column">
           <div
             class="card"
-            onclick="location.href='pages/other_services.html#cleaning';"
+            onclick="location.href=' other_services.html#cleaning';"
             style="cursor: pointer"
           >
             <div class="icon-wrapper">
@@ -403,9 +410,9 @@
               <i class="fa-solid fa-quote-right quote"></i>
             </p>
             <p class="lang lang-ar" style="display: none">
-              <i class="fa-solid fa-quote-left quote"></i> موثوق ومحترف، يقومون
+              <i class="fa-solid fa-quote-right quote"></i> موثوق ومحترف، يقومون
               دائما بالتسليم في الوقت المحدد. شريك موثوق.
-              <i class="fa-solid fa-quote-right quote"></i>
+              <i class="fa-solid fa-quote-left quote"></i>
             </p>
             <h3 class="lang lang-en">- John Doe</h3>
             <h3 class="lang lang-ar" style="display: none">- جون دو</h3>
@@ -419,9 +426,9 @@
               <i class="fa-solid fa-quote-right quote"></i>
             </p>
             <p class="lang lang-ar" style="display: none">
-              <i class="fa-solid fa-quote-left quote"></i> موثوق ومحترف، يقومون
+              <i class="fa-solid fa-quote-right quote"></i> موثوق ومحترف، يقومون
               دائما بالتسليم في الوقت المحدد. شريك موثوق.
-              <i class="fa-solid fa-quote-right quote"></i>
+              <i class="fa-solid fa-quote-left quote"></i>
             </p>
             <h3 class="lang lang-en">- Jane Smith</h3>
             <h3 class="lang lang-ar" style="display: none">- جين سميث</h3>
@@ -435,9 +442,9 @@
               <i class="fa-solid fa-quote-right quote"></i>
             </p>
             <p class="lang lang-ar" style="display: none">
-              <i class="fa-solid fa-quote-left quote"></i> موثوق ومحترف، يقومون
+              <i class="fa-solid fa-quote-right quote"></i> موثوق ومحترف، يقومون
               دائما بالتسليم في الوقت المحدد. شريك موثوق.
-              <i class="fa-solid fa-quote-right quote"></i>
+              <i class="fa-solid fa-quote-left quote"></i>
             </p>
             <h3 class="lang lang-en">- Jane Smith</h3>
             <h3 class="lang lang-ar" style="display: none">- جين سميث</h3>
@@ -590,8 +597,9 @@
     <!-- ======================================== -->
 
     <!-- JavaScript -->
-    <script src="js/script.js"></script>
 
-      </script>
+    <script src="script.js"></script>
+
+
   </body>
 </html>

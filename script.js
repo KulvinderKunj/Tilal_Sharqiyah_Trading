@@ -200,45 +200,41 @@ document.addEventListener("DOMContentLoaded", function () {
 
 function toggleLanguage() {
   const currentLang = document.body.getAttribute("lang");
-  if (currentLang === "en") {
-    document.body.setAttribute("lang", "ar");
-    document
-      .querySelectorAll(".lang-en")
-      .forEach((el) => (el.style.display = "none"));
-    document
-      .querySelectorAll(".lang-ar")
-      .forEach((el) => (el.style.display = "inline"));
-    document
-      .querySelectorAll(".lang-en_b")
-      .forEach((el) => (el.style.display = "none"));
-    document
-      .querySelectorAll(".lang-ar_b")
-      .forEach((el) => (el.style.display = "block"));
-  } else {
-    document.body.setAttribute("lang", "en");
-    document
-      .querySelectorAll(".lang-en")
-      .forEach((el) => (el.style.display = "inline"));
-    document
-      .querySelectorAll(".lang-ar")
-      .forEach((el) => (el.style.display = "none"));
-    document
-      .querySelectorAll(".lang-en_b")
-      .forEach((el) => (el.style.display = "block"));
-    document
-      .querySelectorAll(".lang-ar_b")
-      .forEach((el) => (el.style.display = "none"));
-  }
-  // updateTextDirection();
+  const newLang = currentLang === "en" ? "ar" : "en";
+
+  document.body.setAttribute("lang", newLang);
+  localStorage.setItem("lang", newLang);
+
+  updateLanguageDisplay(newLang);
 }
 
-function updateTextDirection() {
-  const direction = document.body.getAttribute("lang") === "ar" ? "rtl" : "ltr";
-  document.body.style.direction = direction;
+function updateLanguageDisplay(lang) {
+  document
+    .querySelectorAll(".lang-en")
+    .forEach((el) => (el.style.display = lang === "en" ? "inline" : "none"));
+  document
+    .querySelectorAll(".lang-ar")
+    .forEach((el) => (el.style.display = lang === "en" ? "none" : "inline"));
+  document
+    .querySelectorAll(".lang-en_b")
+    .forEach((el) => (el.style.display = lang === "en" ? "block" : "none"));
+  document
+    .querySelectorAll(".lang-ar_b")
+    .forEach((el) => (el.style.display = lang === "en" ? "none" : "block"));
+  document
+    .querySelectorAll(".lang-en_ib")
+    .forEach((el) => (el.style.display = lang === "en" ? "inline-block" : "none"));
+  document
+    .querySelectorAll(".lang-ar_ib")
+    .forEach((el) => (el.style.display = lang === "en" ? "none" : "inline-block"));
 }
 
-// Initial direction setting
-// document.addEventListener("DOMContentLoaded", updateTextDirection);
+// Ensure the initial state is set correctly
+document.addEventListener("DOMContentLoaded", () => {
+  const lang = localStorage.getItem("lang") || "en";
+  document.body.setAttribute("lang", lang);
+  updateLanguageDisplay(lang);
+});
 
 
 

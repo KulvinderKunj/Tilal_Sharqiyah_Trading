@@ -70,22 +70,25 @@ section h2 {
     list-style: none;
   position: relative; 
   float: left;
+  /* display: flex; */
+  /* align-items: center; */
 }
 .nav ul li a{
   color: var(--text-color);
   padding:  10px 20px;
   text-decoration: none;
   display: flex;
+  align-items: center;
   justify-content: space-between;
 
 }
 .nav ul li a:hover{
   color: var(--primary-color);
 }
-.fa-solid{
+/* nav .fa-solid{
   display: flex;
   align-items: center;
-}
+} */
 .nav ul li ul{
   position: absolute;
   left: 0;
@@ -117,6 +120,7 @@ left: 200px;
   color: var(--white-color);
   cursor: pointer;
   border-radius: 5px;
+  width: 80px;
 }
 
 .nav button:hover {
@@ -401,6 +405,7 @@ span.text {
   .sevices_section, .facts_section  {
     width: 100%;
     display: grid;
+    /* direction: rtl; */
   
  
   }
@@ -779,6 +784,9 @@ footer p{
 
   ;
 }
+button{
+  display: block;
+}
 
 
 
@@ -966,6 +974,108 @@ display: none;
       
       }
 
+
+      
+body[lang="ar"]  ul li ul li ul li{
+
+  left: 150px;
+  }
+  body[lang="en"]  ul li ul li ul li{
+
+    left:  50px;
+    }
+
 }
 
 
+
+
+
+
+body[lang="ar"]  ul li{
+  text-align: right;
+
+float: right;
+}
+
+
+body[lang="ar"]  ul li ul li ul{
+
+  left: -200px;
+  }
+
+  body[lang="ar"]  .about p {
+
+    text-align: right;
+    }
+ 
+    body[lang="ar"] .overlay  {
+      direction: ltr;
+    
+    }
+
+    body[lang="ar"]  .about {
+      direction: ltr;
+    
+    }
+
+
+    body[lang="ar"] .facts_section .num {
+      direction: ltr;
+    
+    }
+
+
+    body[lang="ar"] .overlay {
+      direction: rtl;
+    
+    }
+
+    body[lang="ar"]  .about{
+      direction: rtl;
+    
+    }
+    body[lang="ar"] .facts_section {
+      direction: rtl;
+    
+    }
+
+    body[lang="ar"] .services_section {
+      direction: rtl;
+    
+    }
+
+    body[lang="ar"] .testi_section p {
+      direction: rtl;
+    
+    }
+
+    body[lang="ar"] .contact-content{
+      direction: rtl;
+    
+    }
+
+    body[lang="ar"] .testi_section p{
+      direction: ltr;
+    
+    }
+
+    body[lang="ar"]   .contact-content .social-media{
+      direction: ltr;
+    
+    }
+
+
+
+
+    body[lang="ar"] .testi_section p {
+      direction: rtl;
+    
+    }
+
+    body[lang="ar"]    footer{
+      direction: rtl;
+    
+    }
+    
+    
