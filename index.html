@@ -18,13 +18,7 @@
   <!-- ====================================Body start================================ -->
   <body lang="en">
     <!-- ====================================Navigation bar start================================ -->
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Language Toggle Navbar</title>
-    </head>
+
     <body>
       <nav class="nav">
         <!-- logo -->
@@ -246,21 +240,21 @@
         <div class="column">
           <div
             class="card"
-            onclick="location.href='medical.html #medical';"
+            onclick="location.href='medical_services.html#medical';"
             style="cursor: pointer"
           >
             <div class="icon-wrapper">
               <i class="fa-solid fa-hand-holding-medical"></i>
             </div>
             <h3 class="lang lang-en_b">Medical Supplies</h3>
-            <h3 class="lang lang-ar_b" style="display: none">عنوان الخدمة</h3>
+            <h3 class="lang lang-ar_b" style="display: none">الإمدادات الطبية</h3>
             <p class="card_data lang lang-en">
               Experience unmatched quality and reliability in medical supplies
               with our extensive range, designed to meet all your healthcare
               needs
             </p>
             <p class="card_data lang lang-ar" style="display: none">
-              نص عربي مكافئ للوصف المذكور.
+              استمتع بالجودة والموثوقية التي لا مثيل لها في المستلزمات الطبية من خلال مجموعتنا الواسعة، المصممة لتلبية جميع احتياجات الرعاية الصحية الخاصة بك
             </p>
           </div>
         </div>
@@ -274,14 +268,14 @@
               <i class="fa-solid fa-syringe"></i>
             </div>
             <h3 class="lang lang-en_b">Surgical Items Supply</h3>
-            <h3 class="lang lang-ar_b" style="display: none">عنوان الخدمة</h3>
+            <h3 class="lang lang-ar_b" style="display: none">توريد العناصر الجراحية</h3>
             <p class="card_data lang lang-en">
               Your trusted partner in surgical supplies, offering meticulously
               designed, high-quality products that meet rigorous contemporary
               standards
             </p>
             <p class="card_data lang lang-ar" style="display: none">
-              نص عربي مكافئ للوصف المذكور.
+              شريكك الموثوق به في مجال الإمدادات الجراحية، حيث يقدم منتجات مصممة بدقة عالية وعالية الجودة وتلبي المعايير المعاصرة الصارمة
             </p>
           </div>
         </div>
@@ -297,7 +291,7 @@
               <i class="fas fa-hammer"></i>
             </div>
             <h3 class="lang lang-en_b">Construction Services</h3>
-            <h3 class="lang lang-ar_b" style="display: none">عنوان الخدمة</h3>
+            <h3 class="lang lang-ar_b" style="display: none">خدمات البناء</h3>
             <p class="card_data lang lang-en">
               <!-- Your ultimate partner for exceptional construction services, combining superior craftsmanship and reliable solutions to transform your vision into stunning, enduring spaces -->
               Your premier construction partner, delivering superior
@@ -305,7 +299,7 @@
               a stunning, enduring reality
             </p>
             <p class="card_data lang lang-ar" style="display: none">
-              نص عربي مكافئ للوصف المذكور.
+              شريكك الرئيسي في البناء، حيث يقدم براعة فائقة وحلولًا موثوقة لتحويل رؤيتك إلى واقع مذهل ودائم
             </p>
           </div>
         </div>
@@ -320,13 +314,13 @@
               <i class="fa-solid fa-truck-fast"></i>
             </div>
             <h3 class="lang lang-en_b">Logistics Services</h3>
-            <h3 class="lang lang-ar_b" style="display: none">عنوان الخدمة</h3>
+            <h3 class="lang lang-ar_b" style="display: none">الخدمات اللوجستية</h3>
             <p class="card_data lang lang-en">
               Your reliable logistics partner, delivering swift, secure, and
               customized transportation solutions for seamless goods deliver
             </p>
             <p class="card_data lang lang-ar" style="display: none">
-              نص عربي مكافئ للوصف المذكور.
+              شريكك اللوجستي الموثوق به، الذي يقدم حلول نقل سريعة وآمنة ومخصصة لتوصيل البضائع بسلاسة
             </p>
           </div>
         </div>
@@ -340,14 +334,14 @@
               <i class="fa-solid fa-broom"></i>
             </div>
             <h3 class="lang lang-en_b">Cleaning Services</h3>
-            <h3 class="lang lang-ar_b" style="display: none">عنوان الخدمة</h3>
+            <h3 class="lang lang-ar_b" style="display: none">خدمات التنظيف</h3>
             <p class="card_data lang lang-en">
               Your go-to for reliable, detailed, and tailored cleaning services
               for homes and businesses, ensuring pristine and hygienic
               environments
             </p>
             <p class="card_data lang lang-ar" style="display: none">
-              نص عربي مكافئ للوصف المذكور.
+              وجهتك المفضلة للحصول على خدمات تنظيف موثوقة ومفصلة ومصممة خصيصًا للمنازل والشركات، مما يضمن بيئات نظيفة وصحية
             </p>
           </div>
         </div>
@@ -598,7 +592,180 @@
 
     <!-- JavaScript -->
 
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+
+
+
+// // ====================Testimonial================
+document.addEventListener("DOMContentLoaded", function () {
+  const testimonials = document.querySelector(".testimonial-slide");
+  const slides = document.querySelectorAll(".testimonial");
+  const prev = document.querySelector(".prev");
+  const next = document.querySelector(".next");
+  let index = 0;
+  const intervalTime = 3000; // Interval time in milliseconds
+
+  function showSlide(n) {
+    if (n > slides.length - 1) {
+      index = 0;
+    } else if (n < 0) {
+      index = slides.length - 1;
+    } else {
+      index = n;
+    }
+    testimonials.style.transform = `translateX(-${index * 100}%)`;
+  }
+
+  prev.addEventListener("click", () => {
+    showSlide(index - 1);
+    resetAutoplay();
+  });
+
+  next.addEventListener("click", () => {
+    showSlide(index + 1);
+    resetAutoplay();
+  });
+
+  function startAutoplay() {
+    autoplay = setInterval(() => {
+      showSlide(index + 1);
+    }, intervalTime);
+  }
+
+  function resetAutoplay() {
+    clearInterval(autoplay);
+    startAutoplay();
+  }
+
+  let autoplay = setInterval(() => {
+    showSlide(index + 1);
+  }, intervalTime);
+
+  showSlide(index);
+});
+
+
+var copy = document.querySelector(".logos-slide").cloneNode(true);
+document.querySelector(".logos").appendChild(copy);
+
+let valueDisplays = document.querySelectorAll(".num");
+let interval = 4000;
+
+valueDisplays.forEach((valueDisplay) => {
+  let startValue = 0;
+  let endValue = parseInt(valueDisplay.getAttribute("data-val"));
+  let duration = Math.floor(interval / endValue);
+  let counter = setInterval(function () {
+    startValue += 1;
+    valueDisplay.textContent = startValue + "+";
+    if (startValue == endValue) {
+      clearInterval(counter);
+    }
+  }, duration);
+});
+
+      
+// typing
+
+const services = [
+  "Medical Supplies",
+  "Surgical Items Supply",
+  "Transportation Services",
+  "Construction Services",
+  "Logistics Services",
+  "Clearning Services",
+];
+
+let index = 0;
+const element = document.getElementById("typed-text");
+
+function typeService() {
+  let service = services[index];
+  let charIndex = 0;
+
+  function typeChar() {
+    if (charIndex < service.length) {
+      element.innerHTML += service.charAt(charIndex);
+      charIndex++;
+      setTimeout(typeChar, 100);
+    } else {
+      setTimeout(eraseService, 2000);
+    }
+  }
+
+  typeChar();
+}
+
+function eraseService() {
+  let service = services[index];
+  let charIndex = service.length;
+
+  function eraseChar() {
+    if (charIndex > 0) {
+      element.innerHTML = service.substring(0, charIndex - 1);
+      charIndex--;
+      setTimeout(eraseChar, 50);
+    } else {
+      index = (index + 1) % services.length;
+      setTimeout(typeService, 500);
+    }
+  }
+
+  eraseChar();
+}
+
+typeService();
+
+const services_ar = [
+  "المستلزمات الطبية",
+  "توريد الأدوات الجراحية",
+  "خدمات النقل",
+  "خدمات البناء",
+  "الخدمات اللوجستية",
+];
+
+let index_ar = 0;
+const element_ar = document.getElementById("typed-text_ar");
+
+function typeService_ar() {
+  let service_ar = services_ar[index_ar];
+  let charIndex_ar = 0;
+
+  function typeChar_ar() {
+    if (charIndex_ar < service_ar.length) {
+      element_ar.innerHTML += service_ar.charAt(charIndex_ar);
+      charIndex_ar++;
+      setTimeout(typeChar_ar, 100);
+    } else {
+      setTimeout(eraseService_ar, 2000);
+    }
+  }
+
+  typeChar_ar();
+}
+
+function eraseService_ar() {
+  let service_ar = services_ar[index_ar];
+  let charIndex_ar = service_ar.length;
+
+  function eraseChar_ar() {
+    if (charIndex_ar > 0) {
+      element_ar.innerHTML = service_ar.substring(0, charIndex_ar - 1);
+      charIndex_ar--;
+      setTimeout(eraseChar_ar, 50);
+    } else {
+      index_ar = (index_ar + 1) % services_ar.length;
+      setTimeout(typeService_ar, 500);
+    }
+  }
+
+  eraseChar_ar();
+}
+
+typeService_ar();
+
+    </script>
 
 
   </body>

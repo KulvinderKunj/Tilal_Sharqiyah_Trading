@@ -9,272 +9,304 @@
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/fb74ed147c.js" crossorigin="anonymous"></script>
     
-<script src="script.js"></script>
-
     <style>
 
 
 
-:root {
-  --secondary-color: #3188eb;
-  --primary-color: #2081ef;
- 
-  --background-color1: #f9f7f7;
-  --text-color: #333;
-  --white-color: #ffffff;
-  --black-color: #000000;
-  --gray-color: #575a7b;
-  --light-gray-color: #f8f8f8;
-  --heading-color: #154161; 
-}
+      :root {
+        --secondary-color: #3188eb;
+        --primary-color: #2081ef;
+       
+        --background-color1: #f9f7f7;
+        --text-color: #333;
+        --white-color: #ffffff;
+        --black-color: #000000;
+        --gray-color: #575a7b;
+        --light-gray-color: #f8f8f8;
+        --heading-color: #154161; 
+      }
+      
+      
+      html{
+          scroll-behavior: smooth;
+      }
+      * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+          line-height: 1.5em;
+      }
+      
+      section{
+          height: 100vh;
+          padding: 20px;
+       
+      }
+      
+      
+      .hero {
+        
+          display: flex;
+          align-items: center;
+          background-color:var(--white-color);
+          flex-wrap: wrap; /* Allows flex items to wrap onto multiple lines */
+      }
+      
+      .content, .images {
+          flex: 1 1 50%; /* Flex grow, flex shrink, and flex-basis */
+          padding: 20px;
+          min-width: 300px; /* Minimum width before wrapping */
+      }
+      
+      .images img {
+          max-width: 100%; /* Ensures image does not overflow its container */
+       
+      }
+      
+      h1 {
+          text-align: center;
+          font-size: 2em; /* Adjust font size according to viewport width */
+          color: var(--heading-color);
+      
+          margin-bottom: 20px;
+      }
+      
+      .content p {
+      
+          font-size: 1em; 
+          color: var(--text-color);
+          margin-bottom: 20px;
+      }
+      
+      
+      .content button {
+          padding: 10px 20px;
+          color: var(--white-color);
+          background-color: var(--primary-color);
+          border: none;
+          cursor: pointer;
+          transition: background-color 0.3s;
+      }
+      
+      .about_button:hover {
+          background-color: var(--secondary-color);
+      }
+      
+      .about_button {
+      width: 120px;
+      }
+      
+      
+      /* ========================= */
+      
+      
+      .tilal-story {
+      
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+          align-items: center;
+          gap: 20px;
+          padding: 20px;
+          grid-auto-flow: dense;
+      }
+      
+      
+      .image-container img {
+          width: 100%;
+          height: auto;
+          object-fit: cover; /* Ensures the image covers the area without distortion */
+      }
+      
+      .text-container {
+          order: 0; /* Text appears first */
+      }
+      
+      
+      
+      
+      /* ==================================
+       */
+      
+      
+      .mission-section{
+      height: 70vh; 
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      align-items: center;
+      }
+      
+      
+      
+      /* ================================== */
+      
+      
+      
+      
+      .community-section {
+        display: flex;
+          align-items: center;
+          justify-content: space-between;
+      
+          background-color: var(--white-color);
+          flex-wrap: wrap; 
+       
+      }
+      
+      
+      section h2{
+          color: var(--gray-color);
+          font-size:1.3em;
+      }
+      .text-content,.image-content {
+          flex: 1 1 50%; /* Flex grow, flex shrink, and flex-basis */
+          padding: 20px;
+          min-width: 300px;
+      }
+      
+      .image-content img {
+          width: 100%;
+          height: auto;
+          display: block;
+      }
+      .content_mission p{
+          text-align: center;
+      }
+      
+      
+      /* ====================== */
+      @media (max-width: 900px) {
+          section,  .mission-section{
+            height: 100%;
+            padding-top: 70px;
+          }
+         
+      }
+      
+      
+      
+      body[lang="ar"] .hero , body[lang="ar"] .content,  body[lang="ar"]   .tilal-story,  body[lang="ar"]  .mission-section, body[lang="ar"] .community-section{
+            direction: rtl;
+          
+          }
+      
+      
+      
+      
+      
+      
+      
+      
+      
+       
+      
+          </style>
 
 
-html{
-    scroll-behavior: smooth;
-}
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    line-height: 1.5em;
-}
-
-section{
-    height: 100vh;
-    padding: 20px;
- 
-}
-
-
-.hero {
-  
-    display: flex;
-    align-items: center;
-    background-color:var(--white-color);
-    flex-wrap: wrap; /* Allows flex items to wrap onto multiple lines */
-}
-
-.content, .images {
-    flex: 1 1 50%; /* Flex grow, flex shrink, and flex-basis */
-    padding: 20px;
-    min-width: 300px; /* Minimum width before wrapping */
-}
-
-.images img {
-    max-width: 100%; /* Ensures image does not overflow its container */
- 
-}
-
-h1 {
-    text-align: center;
-    font-size: 3.5vw; /* Adjust font size according to viewport width */
-    color: var(--heading-color);
-
-    margin-bottom: 20px;
-}
-
-.content p {
-
-    font-size: 1em; 
-    color: var(--text-color);
-    margin-bottom: 20px;
-}
-
-
-.content button {
-    padding: 10px 20px;
-    color: var(--white-color);
-    background-color: var(--primary-color);
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.about_button:hover {
-    background-color: var(--secondary-color);
-}
-
-
-/* ========================= */
-
-
-.tilal-story {
-
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    align-items: center;
-    gap: 20px;
-    padding: 20px;
-    grid-auto-flow: dense;
-}
-
-
-.image-container img {
-    width: 100%;
-    height: auto;
-    object-fit: cover; /* Ensures the image covers the area without distortion */
-}
-
-.text-container {
-    order: 0; /* Text appears first */
-}
-
-
-
-
-/* ==================================
- */
-
-
-.mission-section{
-height: 70vh; 
-display: flex;
-justify-content: center;
-width: 100%;
-align-items: center;
-}
-
-
-
-/* ================================== */
-
-
-
-
-.community-section {
-  display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    background-color: var(--white-color);
-    flex-wrap: wrap; 
- 
-}
-
-
-section h2{
-    color: var(--gray-color);
-    font-size: 2vw;
-}
-.text-content,.image-content {
-    flex: 1 1 50%; /* Flex grow, flex shrink, and flex-basis */
-    padding: 20px;
-    min-width: 300px;
-}
-
-.image-content img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-.content_mission p{
-    text-align: center;
-}
-
-
-/* ====================== */
-@media (max-width: 900px) {
-    section,  .mission-section{
-        height: 100%;
-    }
-   
-}
-
-    </style>
 </head>
 <body lang="en">
-  <nav class="nav">
-    <!-- logo -->
-    <div class="logo">
-      <a href="index.html"><img src="../images/logo.png" alt="Logo" /></a>
-    </div>
-
-    <!-- Hamburger Menu (ONLY FOR SMALLER SCREENS) -->
-    <div class="hamburger">
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
-
-    <!-- Menu (ONLY FOR LARGE SCREENS) -->
-    <ul id="nav-menu">
-      <li>
-        <a href="index.html" class="lang lang-en_b">Home</a>
-        <a href="index.html" class="lang lang-ar_b" style="display: none">الرئيسية</a>
-      </li>
-      <li>
-        <a href="#" class="lang lang-en_b">About Us</a>
-        <a href="#" class="lang lang-ar_b" style="display: none">عن الشركة</a>
-      </li>
-      <li>
-        <a href="#" class="lang lang-en_b">Our Services &nbsp;<i class="fa-solid fa-chevron-down "></i>  </a>
-        <a href="#" class="lang lang-ar_b" style="display: none" >&nbsp;<i class="fa-solid fa-chevron-down "></i> الخدمات </a>
-        <ul>
-          <li> 
-            <a href="#" class="lang lang-en_b">Medical Services <i class="fa-solid fa-chevron-right"></i></a>
-            <a href="#" class="lang lang-ar_b" style="display: none">&nbsp; <i class="fa-solid fa-chevron-left"></i> الخدمات الطبية</a>
+      <nav class="nav">
+        <!-- logo -->
+        <div class="logo">
+          <a href="index.html"><img src="images/logo.png" alt="Logo" /></a>
+        </div>
+    
+        <!-- Hamburger Menu (ONLY FOR SMALLER SCREENS) -->
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+    
+        <!-- Menu (ONLY FOR LARGE SCREENS) -->
+        <ul id="nav-menu">
+          <li>
+            <a href="#home" class="lang lang-en_b">Home</a>
+            <a href="#home" class="lang lang-ar_b" style="display: none">الرئيسية</a>
+          </li>
+          <li>
+            <a href="aboutUs.html" class="lang lang-en_b">About Us</a>
+            <a href="aboutUs.html" class="lang lang-ar_b" style="display: none">عن الشركة</a>
+          </li>
+          <li>
+            <a href="#" class="lang lang-en_b">Our Services &nbsp;<i class="fa-solid fa-chevron-down "></i>  </a>
+            <a href="#" class="lang lang-ar_b" style="display: none" >&nbsp;<i class="fa-solid fa-chevron-down "></i> الخدمات </a>
             <ul>
-              <li>
-                <a href=medical_services.html#medical" class="lang lang-en_b">Medical Supplies</a>
-                <a href="medical_services.html#medical" class="lang lang-ar_b" style="display: none"> المستلزمات الطبية</a>
+              <li> 
+                <a href="#" class="lang lang-en_b">Medical Services <i class="fa-solid fa-chevron-right"></i></a>
+                <a href="#" class="lang lang-ar_b" style="display: none">&nbsp; <i class="fa-solid fa-chevron-left"></i> الخدمات الطبية</a>
+                <ul>
+                  <li>
+                    <a href="medical_services.html#medical" class="lang lang-en_b">Medical Supplies</a>
+                    <a href="medical_services.html#medical" class="lang lang-ar_b" style="display: none"> المستلزمات الطبية</a>
+                  </li>
+                  <li>
+                    <a href="medical_services.html#surgical" class="lang lang-en_b">Surgical Items Supply</a>
+                    <a href="medical_services.html#surgical" class="lang lang-ar_b" style="display: none"> مستلزمات الجراحة</a>
+                  </li>
+                </ul>
               </li>
-              <li>
-                <a href="medical_services.html#surgical" class="lang lang-en_b">Surgical Items Supply</a>
-                <a href="medical_services.html#surgical" class="lang lang-ar_b" style="display: none"> مستلزمات الجراحة</a>
+              <li> 
+                <a href="#" class="lang lang-en_b">Other Services <i class="fa-solid fa-chevron-right"></i></a>
+                <a href="#" class="lang lang-ar_b" style="display: none">&nbsp; <i class="fa-solid fa-chevron-left"></i> خدمات أخرى</a>
+                <ul> 
+                  <li>
+                    <a href="other_services.html#logistics" class="lang lang-en_b">Logistics</a>
+                    <a href="other_services.html#logistics" class="lang lang-ar_b" style="display: none"> الخدمات اللوجستية</a>
+                  </li>
+                  <li>
+                    <a href="other_services.html#construction" class="lang lang-en_b">Construction</a>
+                    <a href="other_services.html#construction" class="lang lang-ar_b" style="display: none"> خدمات البناء</a>
+                  </li>
+                  <li>
+                    <a href="other_services.html#cleaning" class="lang lang-en_b">Cleaning</a>
+                    <a href="other_services.html#cleaning" class="lang lang-ar_b" style="display: none"> خدمات التنظيف</a>
+                  </li>
+                </ul>
               </li>
             </ul>
           </li>
-          <li> 
-            <a href="#" class="lang lang-en_b">Other Services <i class="fa-solid fa-chevron-right"></i></a>
-            <a href="#" class="lang lang-ar_b" style="display: none">&nbsp; <i class="fa-solid fa-chevron-left"></i> خدمات أخرى</a>
-            <ul> 
-              <li>
-                <a href="other_services.html#logistics" class="lang lang-en_b">Logistics</a>
-                <a href="other_services.html#logistics" class="lang lang-ar_b" style="display: none"> الخدمات اللوجستية</a>
-              </li>
-              <li>
-                <a href="other_services.html#construction" class="lang lang-en_b">Construction</a>
-                <a href="other_services.html#construction" class="lang lang-ar_b" style="display: none"> خدمات البناء</a>
-              </li>
-              <li>
-                <a href="other_services.html#cleaning" class="lang lang-en_b">Cleaning</a>
-                <a href="other_services.html#cleaning" class="lang lang-ar_b" style="display: none"> خدمات التنظيف</a>
-              </li>
-            </ul>
+          <li>
+            <a href="#clients" class="lang lang-en_b">Our Partners</a>
+            <a href="#clients" class="lang lang-ar_b" style="display: none">شركاؤنا</a>
+          </li>
+          <li>
+            <a href="#contact" class="lang lang-en_b">Contact Us</a>
+            <a href="#contact" class="lang lang-ar_b" style="display: none">تواصل معنا</a>
+          </li>
+    
+          <li class="mobile-lang ">
+            <button id="language-toggle"   onclick="toggleLanguage()">
+              <p class="lang lang-en_b">العربية</p>
+              <p class="lang lang-ar_b" style="display: none;">English</p>
+         
+            </button>
+
           </li>
         </ul>
-      </li>
-      <li>
-        <a href="index.html#clients" class="lang lang-en_b">Our Partners</a>
-        <a href="index.html#clients" class="lang lang-ar_b" style="display: none">شركاؤنا</a>
-      </li>
-      <li>
-        <a href="index.html#contact" class="lang lang-en_b">Contact Us</a>
-        <a href="index.html#contact" class="lang lang-ar_b" style="display: none">تواصل معنا</a>
-      </li>
+        <div class="desktop-lang">
+          <button id="language-toggle" onclick="toggleLanguage()">
+            <p class="lang lang-en_b">العربية</p>
+            <p class="lang lang-ar_b" style="display: none;">English</p>
+          </button>
+        </div>
+      </nav>
 
-      <li class="mobile-lang ">
-        <button id="language-toggle" onclick="toggleLanguage()">
-          <p class="lang lang-en_b">العربية</p>
-          <p class="lang lang-ar_b" style="display: none;">English</p>
-        </button>
-      </li>
-    </ul>
-    <div class="desktop-lang">
-      <button id="language-toggle" onclick="toggleLanguage()">
-        <p class="lang lang-en_b">العربية</p>
-          <p class="lang lang-ar_b" style="display: none;">English</p>
-      </button>
-    </div>
-  </nav>
-
-    <section class="hero">
+ 
+  
+      <section class="hero">
         <div class="content">
-            <h1 class="about_h1">About Tilal Sharqiya Trading  </h1>
-            <p class="about_p">At Tilal Sharqiya Trading, we are a dynamic and multifaceted organisation dedicated to excellence in number of industries. Established with a dedication to delivering superior quality and efficiency , we've emerged as a trusted partner in the fields of medical supplies, surgical items supply, transportation, construction, logistics, and Cleaning offerings
+            <h1 class="about_h1 lang lang-en_b">About Tilal Sharqiya Trading  </h1>
+            <h1 class="about_h1 lang lang-ar_b" style="display: none" >حول تلال الشرقية للتجارة</h1>
+            <p class="about_p lang lang-en_b">At Tilal Sharqiya Trading, we are a dynamic and multifaceted organisation dedicated to excellence in number of industries. Established with a dedication to delivering superior quality and efficiency , we've emerged as a trusted partner in the fields of medical supplies, surgical items supply, transportation, construction, logistics, and Cleaning offerings
             </p>
+            <p class="about_p lang lang-ar_b" style="display: none" >
+              في تلال الشرقية للتجارة، نحن منظمة ديناميكية ومتعددة الأوجه مكرسة للتميز في عدد من الصناعات. تأسست مع التفاني في تقديم الجودة والكفاءة العالية، لقد برزنا كشريك موثوق به في مجالات الإمدادات الطبية، وتوريد المواد الجراحية، والنقل، والبناء، والخدمات اللوجستية، وعروض التنظيف
+            </p>
+    
             
-            <button onclick="location.href='../index.html#contact';" style="cursor: pointer;" class="about_button">Get Started</button>
+            <button onclick="location.href='../index.html#contact';" style="cursor: pointer;" class="about_button lang lang-en">Get Started</button>
+            <button onclick="location.href='../index.html#contact';" style="cursor: pointer; display: none;" class="about_button lang lang-ar" >البدء</button>
         </div>
         <div class="images">
             <img src="../images/slider1.jpg" alt="Fashion Store Interior">
@@ -289,17 +321,23 @@ section h2{
             <!-- Additional images or content here -->
         </div>
         <div class="text-container">
-            <h1>The first tilal store was our own</h1>
-            <p>Over a decade ago, we started a store to sell snowboards online. None of the ecommerce solutions at the time gave us the control we needed to be successful—so we built our own. Today, businesses of all sizes use tilal, whether they’re selling online, in retail stores, or on-the-go.</p>
+            <h1 class="lang lang-en_b">The first tilal store was our own</h1>
+            <h1 class="lang lang-ar_b" style="display: none;">أول متجر تلال كان متجرنا</h1>
+            <p class="lang lang-en_b">Over a decade ago, we started a store to sell snowboards online. None of the ecommerce solutions at the time gave us the control we needed to be successful—so we built our own. Today, businesses of all sizes use tilal, whether they’re selling online, in retail stores, or on-the-go.</p>
+            <p class="lang lang-ar_b" style="display: none;">منذ أكثر من عقد من الزمن، أنشأنا متجرًا لبيع ألواح التزلج على الجليد عبر الإنترنت. لم يمنحنا أي من حلول التجارة الإلكترونية في ذلك الوقت التحكم الذي نحتاجه لتحقيق النجاح، لذلك قمنا ببناء حلولنا الخاصة. اليوم، تستخدم الشركات من جميع الأحجام تلال، سواء كانوا يبيعون عبر الإنترنت أو في متاجر البيع بالتجزئة أو أثناء التنقل.</p>
         </div>
     </section>
 
 
     <section class="mission-section">
         <div class="content_mission">
-            <h2>OUR MISSION</h2>
-            <h1>Making Living better for everyone</h1>
-            <p>To provide high-quality services and solutions in medicine resources, surgical objects supply, transportation and logistics services whilst upholding the highest standards of exceptional, integrity, and innovation.</p>
+            <h2 class="lang lang-en_b">OUR MISSION</h2>
+            <h2 class="lang lang-ar_b" style="display: none;" >مهمتنا</h2>
+            <h1 class="lang lang-en_b">Making Living better for everyone</h1>
+            <h1 class="lang lang-ar_b" style="display: none;">جعل الحياة أفضل للجميع</h1>
+            <p class="lang lang-en_b">To provide high-quality services and solutions in medicine resources, surgical objects supply, transportation and logistics services whilst upholding the highest standards of exceptional, integrity, and innovation.</p>
+            <p class="lang lang-ar_b" style="display: none;">تقديم خدمات وحلول عالية الجودة في مجال الموارد الطبية وتوريد الأدوات الجراحية والنقل والخدمات اللوجستية مع الحفاظ على أعلى معايير الاستثناء والنزاهة والابتكار.</p>
+
         </div>
     </section>
 
@@ -307,10 +345,14 @@ section h2{
 
     <section class="community-section">
         <div class="text-content">
-            <h2>OUR TEAM AND OUR SOCIAL IMPACT</h2>
-            <h1>Creating a community for impact</h1>
-            <p>tilal has grown from 5 people in a coffee shop to over 10,000 across the globe. With millions of businesses powered by tilal, we invest in our people and our communities. Our Social Impact initiatives focus on enabling an equitable future by building products and programs to support our team and merchants.</p>
-        </div>
+            <h2 class="lang lang-en_b">OUR TEAM AND OUR SOCIAL IMPACT</h2>
+            <h2 class="lang lang-ar_b" style="display: none;">فريقنا وتأثيرنا الاجتماعي</h2>
+            <h1 class="lang lang-en_b">Creating a community for impact</h1>
+            <h1 class="lang lang-ar_b" style="display: none;">خلق مجتمع للتأثير</h1>
+            <p class="lang lang-en_b">tilal has grown from 5 people in a coffee shop to over 10,000 across the globe. With millions of businesses powered by tilal, we invest in our people and our communities. Our Social Impact initiatives focus on enabling an equitable future by building products and programs to support our team and merchants.</p>
+            <p class="lang lang-ar_b" style="display: none;">نما تلال من 5 أشخاص في مقهى إلى أكثر من ١٠٠٠ في جميع أنحاء العالم. مع الملايين من الشركات التي تدعمها تلال، فإننا نستثمر في موظفينا ومجتمعاتنا. تركز مبادرات التأثير الاجتماعي الخاصة بنا على تمكين مستقبل عادل من خلال بناء منتجات وبرامج لدعم فريقنا وتجارنا.</p>
+     
+          </div>
         <div class="image-content">
             <img src="..//images/slider1.jpg" alt="Team Image">
             <div class="play-icon"></div>
@@ -319,34 +361,42 @@ section h2{
             </div>
         </div>
     </section>
+
+    <footer class="footer">
+      <div class="container">
+          <p class="lang lang-en_b">&copy; 2024 Tilal Sharqiya Trading . All rights reserved.</p>
+          <p class="lang lang-ar_b" style="display: none;">&copy; 2024 تلال الشرقية للتجارة واللوجستيات. جميع الحقوق محفوظة.</p>
+      </div>
+  </footer>
+
+
+    
+  <script>
+// Ensure the initial state is set correctly
+// document.addEventListener("DOMContentLoaded", () => {
+// const lang = localStorage.getItem("lang") || "en";
+// document.body.setAttribute("lang", lang);
+// updateLanguageDisplay(lang);
+// });
+
+
+
+  </script>
+
+<script src="js/script.js"></script>
+
+
 </body>
 </html>
     
-    <footer class="footer">
-        <div class="container">
-            <p class="lang lang-en_b">&copy; 2024 Tilal Sharqiya Trading . All rights reserved.</p>
-            <p class="lang lang-ar_b" style="display: none;">&copy; 2024 تلال الشرقية للتجارة واللوجستيات. جميع الحقوق محفوظة.</p>
-        </div>
-    </footer>
-    
+ 
     
 
 
 
 
 
-    
-          <script>
-// Ensure the initial state is set correctly
-document.addEventListener("DOMContentLoaded", () => {
-  const lang = localStorage.getItem("lang") || "en";
-  document.body.setAttribute("lang", lang);
-  updateLanguageDisplay(lang);
-});
-
-          </script>
 
 
      
-</body>
-</html>
+

@@ -23,6 +23,13 @@
         --light-gray-color: #f8f8f8;
         --heading-color: #154161;
       }
+      *{
+        margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.5em;
+
+      }
       html {
         scroll-padding-top: var(--scroll-padding-top, 50px);
       }
@@ -178,15 +185,17 @@
       
 
       <div class="container1">
-        <h1>Our Services</h1>
+        <h1 class="lang lang-en_b">Other Services</h1>
+        <h1 class="lang lang-ar_b" style="display: none;">خدمات أخرى</h1>
      
         
     
 
         <section class="service-section" id="construction">
           <div class="service-header">
-            <h2>Construction Services</h2>
-            <p>
+            <h2 class="lang lang-en_b">Construction Services</h2>
+            <h2 class="lang lang-ar_b" style="display: none;">خدمات البناء</h2>
+            <p class="lang lang-en_b">
               Your ultimate partner for exceptional construction services,
               delivering superior craftsmanship and reliable solutions for every
               project. With keen attention to detail and a commitment to
@@ -194,6 +203,9 @@
               completion, our dedicated team works closely with you to bring your
               vision to life, transforming aspirations into stunning, enduring
               spaces.
+            </p>
+            <p class="lang lang-ar_b" style="display: none;">
+            شريكك النهائي لخدمات البناء الاستثنائية، وتقديم براعة فائقة وحلول موثوقة لكل مشروع. ومع الاهتمام الشديد بالتفاصيل والالتزام بالتميز، فإننا نلبي أعلى المعايير. من المفهوم إلى التنفيذ، يعمل فريقنا المتفاني معك بشكل وثيق لإضفاء الحيوية على رؤيتك، وتحويل تطلعاتك إلى مساحات مذهلة ودائمة.
             </p>
           </div>
           <div class="products">
@@ -285,13 +297,17 @@
         
         <section class="service-section" id="logistics">
           <div class="service-header">
-            <h2>Logistics Services</h2>
-            <p>
+            <h2 class="lang lang-en_b">Logistics Services</h2>
+            <h2 class="lang lang-ar_b" style="display: none;">الخدمات اللوجستية</h2>
+            <p  class="lang lang-en_b">
               Your dependable logistics ally, providing swift, punctual, and
               secure transportation solutions customized for your business
               requirements. Dedicated to excellence and client satisfaction, we
               guarantee smooth delivery of your goods. Discover our services and
               trust us to manage your logistics meticulously and attentively.
+            </p>
+            <p class="lang lang-ar_b" style="display: none;">
+              حليفك اللوجستي الذي يمكن الاعتماد عليه، حيث يوفر حلول نقل سريعة ودقيقة وآمنة مخصصة لمتطلبات عملك. ملتزمون بالتميز ورضا العملاء، ونحن نضمن التسليم السلس لبضائعك. اكتشف خدماتنا وثق بنا لإدارة الخدمات اللوجستية الخاصة بك بدقة واهتمام.
             </p>
           </div>
           <div class="products">
@@ -383,12 +399,17 @@
         
         <section class="service-section" id="cleaning">
           <div class="service-header">
-            <h2>Cleaning Services</h2>
-            <p>
+            <h2 class="lang lang-en_b">Cleaning Services</h2>
+            <h2 class="lang lang-ar_b" style="display: none;">خدمات التنظيف</h2>
+            <p class="lang lang-en_b" >
               Your go-to for exceptional cleaning services, we deliver reliable,
               detailed, and tailored solutions for both homes and businesses.
               Experience a pristine, hygienic environment with our dedicated team.
               Discover our services and feel the difference!
+            </p>
+            <p class="lang lang-ar_b" style="display: none;">
+              اختيارك الأمثل لخدمات التنظيف الاستثنائية، فنحن نقدم حلولًا موثوقة ومفصلة ومصممة خصيصًا لكل من المنازل والشركات. استمتع ببيئة نظيفة وصحية مع فريقنا المتفاني. اكتشف خدماتنا وأشعر بالفرق!
+            
             </p>
           </div>
           <div class="products">
@@ -485,12 +506,14 @@
 
     <footer class="footer">
       <div class="container">
-        <p>&copy; 2024 Tilal Sharqiya Trading. All rights reserved.</p>
+        <p class="lang lang-en_b">&copy; 2024 Tilal Sharqiya Trading . All rights reserved.</p>
+        <p class="lang lang-ar_b" style="display: none;">&copy; 2024 تلال الشرقية للتجارة واللوجستيات. جميع الحقوق محفوظة.</p>
+    </div>
       </div>
     </footer>
 
     <!-- JavaScript -->
-
+    <script src="js/script.js"></script>
     <script >
 
       // Ensure the initial state is set correctly
@@ -502,8 +525,16 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
+document.querySelector(".hamburger");
+let nav = document.querySelector(".nav");
+hamburger.onclick = function(){
+  nav.classList.toggle('active')
+
+}
+
+
     </script>
-     <script src="script.js"></script>
+
 
 
  

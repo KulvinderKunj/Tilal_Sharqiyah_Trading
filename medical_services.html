@@ -57,7 +57,7 @@
       .card1 {
         margin: 20px;
         background-color: #2c7bfe;
-
+/* height: 20px; */
         border-radius: 15px;
         overflow: hidden;
         width: 250px;
@@ -68,7 +68,7 @@
         padding: auto;
         object-fit: cover;
         width: 100%;
-        height: 20vh;
+        height: 25vh;
       }
 
       .card1 .details h3 {
@@ -82,12 +82,20 @@
         color: var(--primary-color);
       }
       /* ===================== */
-      @media (max-width: 768px) {
+      @media (max-width: 900px) {
         .service-section {
           height: 100%;
-          margin: 20px;
+          padding-top: 70px;
         }
+
+
+      
       }
+
+      body[lang="ar"] .service-header p {
+          direction: rtl;
+        
+        }
     </style>
   </head>
   <body>
@@ -177,17 +185,22 @@
     </nav>
 
     <div class="container1">
-      <h1>Medical Services</h1>
+      <h1 class="lang lang-en_b">Medical Services</h1>
+       <h1 class="lang lang-ar_b" style="display: none;">الخدمات الطبية</h1>
       <section class="service-section" id="medical">
         <div class="service-header">
-          <h2>Medical Supplies  </h2>
-          <p>
+          <h2 class="lang lang-en_b">Medical Supplies  </h2>
+          <h2 class="lang lang-ar_b" style="display: none;">الإمدادات الطبية</h2>
+          <p class="lang lang-en_b">
             Discover unparalleled quality in medical supplies with our extensive
             range of products designed to meet all your healthcare needs. From
             cutting-edge equipment to essential supplies, we ensure reliability
             and excellence. Trust us to deliver superior healthcare solutions.
             Explore our selection today and experience the difference in quality
             and service.
+          </p>
+          <p class="lang lang-ar_b" style="display: none;">اكتشف جودة لا مثيل لها في المستلزمات الطبية من خلال مجموعتنا الواسعة من المنتجات المصممة لتلبية جميع احتياجات الرعاية الصحية الخاصة بك. بدءًا من المعدات المتطورة وحتى الإمدادات الأساسية، فإننا نضمن الموثوقية والتميز. ثق بنا لتقديم حلول رعاية صحية متميزة. استكشف اختياراتنا اليوم واختبر الفرق في الجودة والخدمة.
+
           </p>
         </div>
 
@@ -278,16 +291,22 @@
         </div>
       </section>
 
+
+
       <section class="service-section" id="surgical">
         <div class="service-header">
-          <h2>Surgical Items Supply</h2>
-          <p>
+          <h2 class="lang lang-en_b">Surgical Items Supply</h2>
+          <h2 class="lang lang-ar_b" style="display: none;">توريد العناصر الجراحية</h2>
+          <p class="lang lang-en_b">
             Your trusted partner in premium surgical supplies. We present an
             extensive range of high-quality products, meticulously designed to
             meet the rigorous standards of contemporary surgical practices.
             Delve into our curated selection for dependable,
             precision-engineered solutions that guarantee safety and excellence
             in every procedure.
+          </p>
+          <p  class="lang lang-ar_b" style="display: none;">
+           شريكك الموثوق به في الإمدادات الجراحية المتميزة. نقدم مجموعة واسعة من المنتجات عالية الجودة، والمصممة بدقة لتلبية المعايير الصارمة للممارسات الجراحية المعاصرة. تعمق في مجموعتنا المختارة من الحلول الهندسية الدقيقة والموثوقة التي تضمن السلامة والتميز في كل إجراء.
           </p>
         </div>
         <div class="products">
@@ -380,7 +399,8 @@
 
     <footer class="footer">
       <div class="container">
-        <p>&copy; 2024 Tilal Sharqiya Trading. All rights reserved.</p>
+        <p class="lang lang-en_b">&copy; 2024 Tilal Sharqiya Trading . All rights reserved.</p>
+        <p class="lang lang-ar_b" style="display: none;">&copy; 2024 تلال الشرقية للتجارة واللوجستيات. جميع الحقوق محفوظة.</p>
       </div>
     </footer>
 
@@ -401,7 +421,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     </script>
 
-<script src="script.js"></script>
+<script src="js/script.js"></script>
  
   </body>
 </html>
